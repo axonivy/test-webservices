@@ -1,4 +1,4 @@
-package ch.ivyteam.testservice.country.incident;
+package ch.ivyteam.testservice.country.model;
 
 public class InputStatusIncident {
 

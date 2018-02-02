@@ -2,23 +2,23 @@ package ch.ivyteam.testservice.country;
 
 import org.apache.cxf.frontend.ClientProxyFactoryBean;
 
-import ch.ivyteam.testservice.country.incident.IncidentService;
-import ch.ivyteam.testservice.country.incident.InputReportIncident;
-import ch.ivyteam.testservice.country.incident.InputStatusIncident;
-import ch.ivyteam.testservice.country.incident.OutputReportIncident;
-import ch.ivyteam.testservice.country.incident.OutputStatusIncident;
+import ch.ivyteam.testservice.country.model.CountryService;
+import ch.ivyteam.testservice.country.model.InputReportIncident;
+import ch.ivyteam.testservice.country.model.InputStatusIncident;
+import ch.ivyteam.testservice.country.model.OutputReportIncident;
+import ch.ivyteam.testservice.country.model.OutputStatusIncident;
 
 
 public class CamelRouteClient {
 
     private static final String URL = "http://localhost:8080/camel-example-cxf-tomcat/webservices/incident";
     
-    protected static IncidentService createCXFClient() {
+    protected static CountryService createCXFClient() {
         // we use CXF to create a client for us as its easier than JAXWS and works
         ClientProxyFactoryBean factory = new ClientProxyFactoryBean();
-        factory.setServiceClass(IncidentService.class);
+        factory.setServiceClass(CountryService.class);
         factory.setAddress(URL);
-        return (IncidentService) factory.create();
+        return (CountryService) factory.create();
     }
 
     public static void main(String[] args) throws Exception {
@@ -40,7 +40,7 @@ public class CamelRouteClient {
         input.setPhone("0045 2962 7576");
 
         // create the webservice client and send the request
-        IncidentService client = createCXFClient();
+        CountryService client = createCXFClient();
         OutputReportIncident out = client.reportIncident(input);
         System.out.println(out.getCode());
         InputStatusIncident inStatus = new InputStatusIncident();
