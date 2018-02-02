@@ -12,6 +12,7 @@ pipeline {
       steps {
         script {
           maven cmd: '-f country-service/pom.xml install'
+		  maven cmd: '-f test-rest-service/pom.xml install'
         }
       }
     }
@@ -19,6 +20,7 @@ pipeline {
       steps {
         script {
           maven cmd: '-f country-service/pom.xml tomcat:redeploy'
+		  maven cmd: '-f test-rest-service/pom.xml tomcat:redeploy'
         }
       }
     }

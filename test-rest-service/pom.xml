@@ -34,7 +34,7 @@
 				<version>2.2</version>
 				<configuration>
 					<url>http://zugtstweb:8080/manager/text</url>
-					<server>ZugTstWeb</server>
+					<server>zugtstweb.tomcat</server>
 					<path>/test-rest-service</path>
 				</configuration>
 			</plugin>
