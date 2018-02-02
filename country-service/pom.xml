@@ -9,7 +9,10 @@
   <artifactId>country-service</artifactId>
   <packaging>war</packaging>
 
-  <!-- http://zugtstweb:8080/country-service/webservices/incident?wsdl -->
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
 
   <build>
   	<finalName>country-service</finalName>
@@ -17,24 +20,11 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>tomcat-maven-plugin</artifactId>
+        <version>1.1</version>
         <configuration>
           <server>zugtstweb.tomcat</server>
           <url>http://zugtstweb:8080/manager/text</url>
           <path>/country-service</path>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <configuration>
-          <mainClass>org.apache.camel.example.cxf.CamelRouteClient</mainClass>
-          <includePluginDependencies>false</includePluginDependencies>
-          <systemProperties>
-            <property>
-              <key>java.util.logging.config.file</key>
-              <value>logging.properties</value>
-            </property>
-          </systemProperties>
         </configuration>
       </plugin>
     </plugins>
