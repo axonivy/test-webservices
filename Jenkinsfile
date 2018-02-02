@@ -15,5 +15,12 @@ pipeline {
         }
       }
     }
+    stage('deploy') {
+      steps {
+        script {
+          maven cmd: '-f country-service/pom.xml tomcat:redeploy'
+        }
+      }
+    }
   }
 }
