@@ -4,9 +4,9 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.apache.camel.example</groupId>
+  <groupId>ch.ivyteam.testservice</groupId>
   <version>2.21.0-SNAPSHOT</version>
-  <artifactId>camel-example-cxf-tomcat</artifactId>
+  <artifactId>country-service</artifactId>
   <packaging>war</packaging>
 
   <!-- http://zugtstweb:8080/country-service/webservices/incident?wsdl -->
