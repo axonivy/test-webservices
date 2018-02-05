@@ -1,4 +1,4 @@
-package ch.ivyteam.testservice.country.model;
+package ch.ivyteam.testservice.country;
 
 import java.util.ArrayList;
 import java.util.List;
