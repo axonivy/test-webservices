@@ -20,8 +20,8 @@ pipeline {
     stage('deploy') {
       steps {
         script {
-          maven cmd: '-f country-service/pom.xml tomcat:redeploy'
-		  maven cmd: '-f test-rest-service/pom.xml tomcat:redeploy'
+          maven cmd: '-f country-service/pom.xml tomcat7:redeploy'
+		  maven cmd: '-f test-rest-service/pom.xml tomcat7:redeploy'
         }
       }
     }
