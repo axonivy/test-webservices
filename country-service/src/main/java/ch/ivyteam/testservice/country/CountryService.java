@@ -1,7 +1,9 @@
 package ch.ivyteam.testservice.country;
 
 import javax.jws.WebMethod;
+import javax.jws.WebService;
 
+@WebService
 public class CountryService
 {
   @WebMethod
