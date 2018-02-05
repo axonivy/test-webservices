@@ -5,19 +5,20 @@ import java.util.List;
 
 public class Country
 {
-  public static List<Country> countries = new ArrayList<Country>();
+  public static List<Country> countries = new ArrayList<>();
+  static
   {
     countries.add(new Country("CH", "Switzerland"));
     countries.add(new Country("DE", "Germany"));
     countries.add(new Country("IT", "Italy"));
   }
-  
+
   private String shortName;
   private String name;
 
-  private Country(String shortName, String name)
+  Country(String shortName, String name)
   {
-    this.setShortName(shortName);
+    this.shortName = shortName;
     this.name = name;
   }
 
@@ -30,8 +31,7 @@ public class Country
   {
     this.shortName = shortName;
   }
-  
-  
+
   public String getName()
   {
     return name;
@@ -41,5 +41,4 @@ public class Country
   {
     this.name = name;
   }
-
 }
