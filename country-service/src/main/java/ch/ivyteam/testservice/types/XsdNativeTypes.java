@@ -1,18 +1,20 @@
 package ch.ivyteam.testservice.types;
 
-import org.apache.xmlbeans.XmlCalendar;
-import org.apache.xmlbeans.XmlDate;
-import org.apache.xmlbeans.XmlDateTime;
-import org.apache.xmlbeans.XmlTime;
+import java.util.Date;
+
+import javax.xml.bind.annotation.XmlElement;
 
 public class XsdNativeTypes {
 
 	public String string;
 
-	// time
-	public XmlDate date;
-	public XmlDateTime dateTime;
-	public XmlTime time;
-	public XmlCalendar calendar;
+	@XmlElement(name = "date", required = false)
+	public Date date;
+	
+	@XmlElement(name = "dateTime", required = false) 
+	public Date dateTime;
+	
+	@XmlElement(name = "time", required = false)
+	public Date time;
 	
 }
