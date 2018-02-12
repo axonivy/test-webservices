@@ -1,18 +1,18 @@
 package ch.ivyteam.testservice.types;
 
-import java.time.ZonedDateTime;
-import java.util.Date;
-
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-
-import ch.ivyteam.testservice.types.adapter.ZoneDateTimeAdapter;
+import org.apache.xmlbeans.XmlCalendar;
+import org.apache.xmlbeans.XmlDate;
+import org.apache.xmlbeans.XmlDateTime;
+import org.apache.xmlbeans.XmlTime;
 
 public class XsdNativeTypes {
 
 	public String string;
-	public Date date;
-	
-	@XmlJavaTypeAdapter(ZoneDateTimeAdapter.class) // make xsd:dateType compatible
-	public ZonedDateTime dateTime;
+
+	// time
+	public XmlDate date;
+	public XmlDateTime dateTime;
+	public XmlTime time;
+	public XmlCalendar calendar;
 	
 }
