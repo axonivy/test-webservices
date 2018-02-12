@@ -1,4 +1,4 @@
-package ch.ivyteam.testservice.country;
+package ch.ivyteam.testservice;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -19,6 +19,9 @@ import org.apache.wss4j.common.ConfigurationConstants;
 import org.apache.wss4j.common.WSS4JConstants;
 import org.apache.wss4j.common.ext.WSPasswordCallback;
 
+import ch.ivyteam.testservice.country.CountryService;
+import ch.ivyteam.testservice.types.NativeTypeService;
+
 @WebServlet("/webservices/*")
 public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
 {
@@ -31,9 +34,10 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     BusFactory.setDefaultBus(getBus());
     
     Endpoint.publish("/country", new CountryService());
-    
     Endpoint endpoint = Endpoint.publish("/country-wssecurity", new CountryService());
     protectEndpointByWSSecurity(endpoint);
+  
+    Endpoint.publish("/native", new NativeTypeService());
   }
   
   private static void protectEndpointByWSSecurity(Endpoint endpoint)
