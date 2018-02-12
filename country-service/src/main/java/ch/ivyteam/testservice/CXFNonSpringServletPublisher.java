@@ -25,7 +25,7 @@ import ch.ivyteam.testservice.types.NativeTypeService;
 @WebServlet("/webservices/*")
 public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
 {
-  private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 2L;
 
   @Override
   public void loadBus(ServletConfig servletConfig)
