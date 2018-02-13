@@ -2,19 +2,19 @@ package ch.ivyteam.testservice.types;
 
 import java.util.Date;
 
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 
 public class XsdNativeTypes {
 
 	public String string;
 
-	@XmlElement(name = "date", required = false)
+	@XmlSchemaType(name = "date")
 	public Date date;
 	
-	@XmlElement(name = "dateTime", required = false) 
+	@XmlSchemaType(name = "dateTime") 
 	public Date dateTime;
 	
-	@XmlElement(name = "time", required = false)
+	@XmlSchemaType(name="time")
 	public Date time;
 	
 }
