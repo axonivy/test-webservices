@@ -27,4 +27,18 @@ public class CountryService
   {
     throw new RuntimeException("SOAP Fault Message - Business Message");
   }
+  
+  @WebMethod
+  public String longRunningOperation(@WebParam(name = "timeoutInMillis") int timeoutInMillis)
+  {
+    try
+    {
+      Thread.sleep(timeoutInMillis);
+    }
+    catch (InterruptedException ex)
+    {
+      ex.printStackTrace();
+    }
+    return "This operation took " + timeoutInMillis + " millis.";
+  }
 }
