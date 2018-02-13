@@ -4,6 +4,12 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
+import org.apache.cxf.annotations.WSDLDocumentation;
+import org.apache.cxf.annotations.WSDLDocumentationCollection;
+
+@WSDLDocumentationCollection({
+  @WSDLDocumentation(value="Here to serve countries", placement = WSDLDocumentation.Placement.TOP),
+})
 @WebService
 public class CountryService
 {

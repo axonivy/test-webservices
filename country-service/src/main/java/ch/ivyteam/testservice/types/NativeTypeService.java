@@ -4,9 +4,12 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-/**
- * Interacts with XSD native types.
- */
+import org.apache.cxf.annotations.WSDLDocumentation;
+import org.apache.cxf.annotations.WSDLDocumentationCollection;
+
+@WSDLDocumentationCollection({
+  @WSDLDocumentation(value="Interact with XSD native types", placement = WSDLDocumentation.Placement.TOP),
+})
 @WebService
 public class NativeTypeService {
 
