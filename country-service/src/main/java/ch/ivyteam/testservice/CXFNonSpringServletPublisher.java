@@ -67,7 +67,9 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
   private void publishWsAddressingService()
   {
     EndpointImpl endpoint = (EndpointImpl) Endpoint.create(new CountryService());
-    endpoint.getFeatures().add(new WSAddressingFeature());
+    WSAddressingFeature feature = new WSAddressingFeature();
+    feature.setAddressingRequired(true);
+    endpoint.getFeatures().add(feature);
     endpoint.publish("/country-wsaddressing");
   }
 
