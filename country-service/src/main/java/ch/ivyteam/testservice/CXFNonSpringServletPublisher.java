@@ -33,15 +33,24 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     super.loadBus(servletConfig);
     BusFactory.setDefaultBus(getBus());
     
+    publishCountryService();
+    publishNativeTypeService();
+    publishWsSecurityService();
+  }
+
+  private void publishCountryService()
+  {
     Endpoint.publish("/country", new CountryService());
-    Endpoint endpoint = Endpoint.publish("/country-wssecurity", new CountryService());
-    protectEndpointByWSSecurity(endpoint);
+  }
   
+  private void publishNativeTypeService()
+  {
     Endpoint.publish("/native", new NativeTypeService());
   }
   
-  private static void protectEndpointByWSSecurity(Endpoint endpoint)
+  private void publishWsSecurityService()
   {
+    Endpoint endpoint = Endpoint.publish("/country-wssecurity", new CountryService());
     InterceptorProvider interceptorProvider = (InterceptorProvider) endpoint;
     Map<String, Object> inProps = new HashMap<>();
     WSS4JInInterceptor wssIn = new WSS4JInInterceptor(inProps);
