@@ -55,6 +55,7 @@ public class BlobResource {
     @Produces("application/octet-stream")
     public StreamingOutput handleDownload(@PathParam("file") final String file) throws Exception {
         return new StreamingOutput() {
+            @Override
             public void write(OutputStream output) throws IOException {
                 System.out.println("File "+file+" requested");
                 long ts = System.currentTimeMillis();

@@ -32,6 +32,7 @@ public class SecureService {
 
 	/**
 	 *  {@link PermitAll}: no authentication required to call this method. Anonymous access granted.
+	 * @return response
 	 */
 	@GET
 	@PermitAll
@@ -45,6 +46,8 @@ public class SecureService {
 	
 	/**
 	 * No <code>javax.security</code> annotation present: Defaults to HTTP-BASIC auth required.
+	 * @param newEntry 
+	 * @return response
 	 */
 	@PUT
 	@Consumes(MediaType.TEXT_PLAIN)
@@ -58,6 +61,9 @@ public class SecureService {
 	
 	/** 
 	 * {@link RolesAllowed}: only HTTP-BASIC authenticated users which own the role 'Manager' are allowed to call this method. 
+	 * @param id 
+	 * @param newEntry 
+	 * @return response
 	 */
 	@POST @Path("/{entryId}")
 	@RolesAllowed("Manager")
@@ -71,6 +77,7 @@ public class SecureService {
 	
 	/**
 	 * {@link DenyAll}: Access to this method is blocked for all users 
+	 * @param id 
 	 */
 	@DELETE @Path("/{entryId}")
 	@DenyAll
