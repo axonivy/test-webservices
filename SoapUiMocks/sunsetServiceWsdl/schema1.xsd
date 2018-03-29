@@ -1,0 +1,28 @@
+<s:schema xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET/">
+  <s:element name="GetSunSetRiseTime">
+    <s:complexType>
+      <s:sequence>
+        <s:element name="L" type="tns:LatLonDate"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+  <s:complexType name="LatLonDate">
+    <s:sequence>
+      <s:element name="Latitude" type="s:float"/>
+      <s:element name="Longitude" type="s:float"/>
+      <s:element name="SunSetTime" type="s:float"/>
+      <s:element name="SunRiseTime" type="s:float"/>
+      <s:element name="TimeZone" type="s:int"/>
+      <s:element name="Day" type="s:int"/>
+      <s:element name="Month" type="s:int"/>
+      <s:element name="Year" type="s:int"/>
+    </s:sequence>
+  </s:complexType>
+  <s:element name="GetSunSetRiseTimeResponse">
+    <s:complexType>
+      <s:sequence>
+        <s:element name="GetSunSetRiseTimeResult" type="tns:LatLonDate"/>
+      </s:sequence>
+    </s:complexType>
+  </s:element>
+</s:schema>

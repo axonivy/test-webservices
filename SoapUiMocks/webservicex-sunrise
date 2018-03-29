@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetSunSetRiseTimeResponse>
+         <web:GetSunSetRiseTimeResult>
+            <web:Latitude>47.166167</web:Latitude>
+            <web:Longitude>8.515495</web:Longitude>
+            <web:SunSetTime>20</web:SunSetTime>
+            <web:SunRiseTime>6</web:SunRiseTime>
+            <web:TimeZone>+1</web:TimeZone>
+            <web:Day>29</web:Day>
+            <web:Month>3</web:Month>
+            <web:Year>2018</web:Year>
+         </web:GetSunSetRiseTimeResult>
+      </web:GetSunSetRiseTimeResponse>
+   </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5386454e-0da6-43d5-9d7d-d96bfb5ef92d" activeEnvironment="Default" name="webserviceXsunrise" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="37460c80-ee60-4c0c-a06f-455ca38d82b6" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://zuglinrew:8000/sunsetSErviceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://ZUGTSTWEB:7077/mockedPublicServices</con:endpoint><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint></con:endpoints><con:operation id="915b7255-1de4-4b70-8e8f-ae71f5dba69c" isOneWay="false" action="http://www.webserviceX.NET/GetSunSetRiseTime" name="GetSunSetRiseTime" bindingOperationName="GetSunSetRiseTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d463d7a3-7867-4277-9ce2-f2d16c6a3835" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetSunSetRiseTime>\r
+         <web:L>\r
+            <web:Latitude>?</web:Latitude>\r
+            <web:Longitude>?</web:Longitude>\r
+            <web:SunSetTime>?</web:SunSetTime>\r
+            <web:SunRiseTime>?</web:SunRiseTime>\r
+            <web:TimeZone>?</web:TimeZone>\r
+            <web:Day>?</web:Day>\r
+            <web:Month>?</web:Month>\r
+            <web:Year>?</web:Year>\r
+         </web:L>\r
+      </web:GetSunSetRiseTime>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/SunSetRiseServiceSoap/GetSunSetRiseTimeRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="ecda5244-8f5d-4ae8-8708-ae42ad80a15c" wsaVersion="NONE" name="SunSetRiseServiceSoap" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://zuglinrew:8000/sunsetSErviceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zuglinrew:8000/sunsetSErviceWsdl/sunsetriseservice.wsdl"><con:part><con:url>http://zuglinrew:8000/sunsetSErviceWsdl/sunsetriseservice.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webserviceX.NET/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET/">
+      <s:element name="GetSunSetRiseTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="1" name="L" type="tns:LatLonDate"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LatLonDate">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="Latitude" type="s:float"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Longitude" type="s:float"/>
+          <s:element maxOccurs="1" minOccurs="1" name="SunSetTime" type="s:float"/>
+          <s:element maxOccurs="1" minOccurs="1" name="SunRiseTime" type="s:float"/>
+          <s:element maxOccurs="1" minOccurs="1" name="TimeZone" type="s:int"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Day" type="s:int"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Month" type="s:int"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Year" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSunSetRiseTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="1" name="GetSunSetRiseTimeResult" type="tns:LatLonDate"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSunSetRiseTimeSoapIn">
+    <wsdl:part element="tns:GetSunSetRiseTime" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSunSetRiseTimeSoapOut">
+    <wsdl:part element="tns:GetSunSetRiseTimeResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SunSetRiseServiceSoap">
+    <wsdl:operation name="GetSunSetRiseTime">
+      <wsdl:documentation><![CDATA[Get Sunset and Sunrise time for any location in the world<br><b>Longitude:</b>Positive in Western Hemisphere,Negative in Eastern Hemisphere<br><b>Latitude:</b>Positive in Northern Hemisphere,Negative in Southern Hemisphere]]]]>><![CDATA[</wsdl:documentation>
+      <wsdl:input message="tns:GetSunSetRiseTimeSoapIn"></wsdl:input>
+      <wsdl:output message="tns:GetSunSetRiseTimeSoapOut"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SunSetRiseServiceHttpPost"></wsdl:portType>
+  <wsdl:portType name="SunSetRiseServiceHttpGet"></wsdl:portType>
+  <wsdl:binding name="SunSetRiseServiceSoap" type="tns:SunSetRiseServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetSunSetRiseTime">
+      <soap:operation soapAction="http://www.webserviceX.NET/GetSunSetRiseTime" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SunSetRiseServiceSoap12" type="tns:SunSetRiseServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetSunSetRiseTime">
+      <soap12:operation soapAction="http://www.webserviceX.NET/GetSunSetRiseTime" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SunSetRiseServiceHttpPost" type="tns:SunSetRiseServiceHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:binding name="SunSetRiseServiceHttpGet" type="tns:SunSetRiseServiceHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:service name="SunSetRiseService">
+    <wsdl:port binding="tns:SunSetRiseServiceSoap12" name="SunSetRiseServiceSoap12">
+      <soap12:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:SunSetRiseServiceHttpGet" name="SunSetRiseServiceHttpGet">
+      <http:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:SunSetRiseServiceHttpPost" name="SunSetRiseServiceHttpPost">
+      <http:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:SunSetRiseServiceSoap" name="SunSetRiseServiceSoap">
+      <soap:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint></con:endpoints><con:operation id="231b8313-1ec5-4ce6-a6e3-235c1c7c4003" isOneWay="false" action="http://www.webserviceX.NET/GetSunSetRiseTime" name="GetSunSetRiseTime" bindingOperationName="GetSunSetRiseTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8b0dcf0b-03de-43c3-a965-49750841a71e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetSunSetRiseTime>\r
+         <web:L>\r
+            <web:Latitude>?</web:Latitude>\r
+            <web:Longitude>?</web:Longitude>\r
+            <web:SunSetTime>?</web:SunSetTime>\r
+            <web:SunRiseTime>?</web:SunRiseTime>\r
+            <web:TimeZone>?</web:TimeZone>\r
+            <web:Day>?</web:Day>\r
+            <web:Month>?</web:Month>\r
+            <web:Year>?</web:Year>\r
+         </web:L>\r
+      </web:GetSunSetRiseTime>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetSunSetRiseTime"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="34b45356-34aa-4acd-a9bb-7723f98c5faf" wsaVersion="NONE" name="GeoIPServiceSoap" type="wsdl" bindingName="{http://www.webservicex.net/}GeoIPServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://zuglinrew:8000/geoIpServiceWsdl/geoipservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://ZUGTSTWEB:7077/mockGeoIPServiceSoap</con:endpoint><con:endpoint>http://www.webservicex.net/geoipservice.asmx</con:endpoint></con:endpoints><con:operation id="0fa4e57d-0ee4-497a-be22-98eaeeb7d09d" isOneWay="false" action="http://www.webservicex.net/GetGeoIP" name="GetGeoIP" bindingOperationName="GetGeoIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="ec48ec3c-b808-4053-9ca1-60ea58168c81" isOneWay="false" action="http://www.webservicex.net/GetGeoIPContext" name="GetGeoIPContext" bindingOperationName="GetGeoIPContext" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="41faa80f-b6a8-43c0-a285-45a9c12bbb36" wsaVersion="NONE" name="GeoIPServiceSoap12" type="wsdl" bindingName="{http://www.webservicex.net/}GeoIPServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://zuglinrew:8000/geoIpServiceWsdl/geoipservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zuglinrew:8000/geoIpServiceWsdl/geoipservice.wsdl"><con:part><con:url>http://zuglinrew:8000/geoIpServiceWsdl/geoipservice.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webservicex.net/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://www.webservicex.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webservicex.net/">
+      <s:element name="GetGeoIP">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="IPAddress" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGeoIPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetGeoIPResult" type="tns:GeoIP"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GeoIP">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="ReturnCode" type="s:int"/>
+          <s:element maxOccurs="1" minOccurs="0" name="IP" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ReturnCodeDetails" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="CountryName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="CountryCode" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGeoIPContext">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetGeoIPContextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetGeoIPContextResult" type="tns:GeoIP"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeoIP" nillable="true" type="tns:GeoIP"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetGeoIPContextSoapIn">
+    <wsdl:part element="tns:GetGeoIPContext" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPContextSoapOut">
+    <wsdl:part element="tns:GetGeoIPContextResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPHttpPostIn">
+    <wsdl:part name="IPAddress" type="s:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPContextHttpPostIn"></wsdl:message>
+  <wsdl:message name="GetGeoIPHttpGetOut">
+    <wsdl:part element="tns:GeoIP" name="Body"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPSoapIn">
+    <wsdl:part element="tns:GetGeoIP" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPHttpPostOut">
+    <wsdl:part element="tns:GeoIP" name="Body"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPHttpGetIn">
+    <wsdl:part name="IPAddress" type="s:string"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPContextHttpGetIn"></wsdl:message>
+  <wsdl:message name="GetGeoIPContextHttpPostOut">
+    <wsdl:part element="tns:GeoIP" name="Body"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPSoapOut">
+    <wsdl:part element="tns:GetGeoIPResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPContextHttpGetOut">
+    <wsdl:part element="tns:GeoIP" name="Body"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GeoIPServiceSoap">
+    <wsdl:operation name="GetGeoIP">
+      <wsdl:documentation>GeoIPService - GetGeoIP enables you to easily look up countries by IP addresses</wsdl:documentation>
+      <wsdl:input message="tns:GetGeoIPSoapIn"></wsdl:input>
+      <wsdl:output message="tns:GetGeoIPSoapOut"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIPContext">
+      <wsdl:documentation>GeoIPService - GetGeoIPContext enables you to easily look up countries by Context</wsdl:documentation>
+      <wsdl:input message="tns:GetGeoIPContextSoapIn"></wsdl:input>
+      <wsdl:output message="tns:GetGeoIPContextSoapOut"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GeoIPServiceHttpGet">
+    <wsdl:operation name="GetGeoIP">
+      <wsdl:documentation>GeoIPService - GetGeoIP enables you to easily look up countries by IP addresses</wsdl:documentation>
+      <wsdl:input message="tns:GetGeoIPHttpGetIn"></wsdl:input>
+      <wsdl:output message="tns:GetGeoIPHttpGetOut"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIPContext">
+      <wsdl:documentation>GeoIPService - GetGeoIPContext enables you to easily look up countries by Context</wsdl:documentation>
+      <wsdl:input message="tns:GetGeoIPContextHttpGetIn"></wsdl:input>
+      <wsdl:output message="tns:GetGeoIPContextHttpGetOut"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GeoIPServiceHttpPost">
+    <wsdl:operation name="GetGeoIP">
+      <wsdl:documentation>GeoIPService - GetGeoIP enables you to easily look up countries by IP addresses</wsdl:documentation>
+      <wsdl:input message="tns:GetGeoIPHttpPostIn"></wsdl:input>
+      <wsdl:output message="tns:GetGeoIPHttpPostOut"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIPContext">
+      <wsdl:documentation>GeoIPService - GetGeoIPContext enables you to easily look up countries by Context</wsdl:documentation>
+      <wsdl:input message="tns:GetGeoIPContextHttpPostIn"></wsdl:input>
+      <wsdl:output message="tns:GetGeoIPContextHttpPostOut"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GeoIPServiceSoap" type="tns:GeoIPServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetGeoIP">
+      <soap:operation soapAction="http://www.webservicex.net/GetGeoIP" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIPContext">
+      <soap:operation soapAction="http://www.webservicex.net/GetGeoIPContext" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GeoIPServiceHttpGet" type="tns:GeoIPServiceHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetGeoIP">
+      <http:operation location="/GetGeoIP"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIPContext">
+      <http:operation location="/GetGeoIPContext"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GeoIPServiceHttpPost" type="tns:GeoIPServiceHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetGeoIP">
+      <http:operation location="/GetGeoIP"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIPContext">
+      <http:operation location="/GetGeoIPContext"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GeoIPServiceSoap12" type="tns:GeoIPServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetGeoIP">
+      <soap12:operation soapAction="http://www.webservicex.net/GetGeoIP" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIPContext">
+      <soap12:operation soapAction="http://www.webservicex.net/GetGeoIPContext" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GeoIPService">
+    <wsdl:port binding="tns:GeoIPServiceSoap" name="GeoIPServiceSoap">
+      <soap:address location="http://www.webservicex.net/geoipservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:GeoIPServiceHttpGet" name="GeoIPServiceHttpGet">
+      <http:address location="http://www.webservicex.net/geoipservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:GeoIPServiceHttpPost" name="GeoIPServiceHttpPost">
+      <http:address location="http://www.webservicex.net/geoipservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:GeoIPServiceSoap12" name="GeoIPServiceSoap12">
+      <soap12:address location="http://www.webservicex.net/geoipservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ZUGTSTWEB:7078/mockGeoIPServiceSoap12</con:endpoint><con:endpoint>http://www.webservicex.net/geoipservice.asmx</con:endpoint></con:endpoints><con:operation id="c65739ae-fc85-4c31-a723-83516e6fe617" isOneWay="false" action="http://www.webservicex.net/GetGeoIP" name="GetGeoIP" bindingOperationName="GetGeoIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="51502a40-b8b2-4df9-a5b2-9d20174bf292" isOneWay="false" action="http://www.webservicex.net/GetGeoIPContext" name="GetGeoIPContext" bindingOperationName="GetGeoIPContext" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="SunSetRiseServiceSoap12 MockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetSunSetRiseTimeResponse>
+         <web:GetSunSetRiseTimeResult>
+            <web:Latitude>47.166167</web:Latitude>
+            <web:Longitude>8.515495</web:Longitude>
+            <web:SunSetTime>20</web:SunSetTime>
+            <web:SunRiseTime>6</web:SunRiseTime>
+            <web:TimeZone>+1</web:TimeZone>
+            <web:Day>29</web:Day>
+            <web:Month>3</web:Month>
+            <web:Year>2018</web:Year>
+         </web:GetSunSetRiseTimeResult>
+      </web:GetSunSetRiseTimeResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/SunSetRiseServiceSoap/GetSunSetRiseTimeResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetGeoIPContext" id="102eaf78-e00f-44e9-ac57-af055da8289c" interface="GeoIPServiceSoap" operation="GetGeoIPContext"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="48b5b3bd-6e82-4269-a1d9-ea5c5b44fafc" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetGeoIPContextResponse>
+         <!--faked by SOAP UI:-->
+         <web:GetGeoIPContextResult>
+            <web:ReturnCode>200</web:ReturnCode>
+            <web:IP>127.0.0.1</web:IP>
+            <web:ReturnCodeDetails>?</web:ReturnCodeDetails>
+            <web:CountryName>Switzerland</web:CountryName>
+            <web:CountryCode>CH</web:CountryCode>
+         </web:GetGeoIPContextResult>
+      </web:GetGeoIPContextResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetGeoIPContext"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetGeoIP" id="9317d825-0557-4f7a-9af0-d085933051f5" interface="GeoIPServiceSoap" operation="GetGeoIP"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="b1a2e6c6-b1b9-40e7-b0f9-884dd57bd786" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetGeoIPResponse>
+         <!-- Simple mock: provided by SOAP UI :-->
+         <web:GetGeoIPResult>
+            <web:ReturnCode>200</web:ReturnCode>
+            <web:IP>127.0.0.1</web:IP>
+            <web:ReturnCodeDetails>?</web:ReturnCodeDetails>
+            <web:CountryName>Switzerland</web:CountryName>
+            <web:CountryCode>CH</web:CountryCode>
+         </web:GetGeoIPResult>
+      </web:GetGeoIPResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetGeoIP"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
