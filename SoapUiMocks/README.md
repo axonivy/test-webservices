@@ -7,4 +7,6 @@
 4. Click `OK` on the following dialogs
 6. Add response test data into `Response 1`
 7. Save the project
-8. Also copy the original wsdl to a sub-folder
+8. Also copy the original wsdl to a sub-folder of `wsdl` subfolder
+9. Copy the whole `wsdl` subfolder into `C:\inetpub\wwwroot\soapui\` so that the WSDLs become available under the URL `http://zugtstweb/test-wsdls/wsdl/`
+(For some reasons the original wsdls need to be available when starting the Mock service)
