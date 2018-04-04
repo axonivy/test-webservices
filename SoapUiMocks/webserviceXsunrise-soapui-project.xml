@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="5386454e-0da6-43d5-9d7d-d96bfb5ef92d" activeEnvironment="Default" name="webserviceXsunrise" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="37460c80-ee60-4c0c-a06f-455ca38d82b6" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://zuglinrew:8000/sunsetSErviceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://ZUGTSTWEB:7077/mockedPublicServices</con:endpoint><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint></con:endpoints><con:operation id="915b7255-1de4-4b70-8e8f-ae71f5dba69c" isOneWay="false" action="http://www.webserviceX.NET/GetSunSetRiseTime" name="GetSunSetRiseTime" bindingOperationName="GetSunSetRiseTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d463d7a3-7867-4277-9ce2-f2d16c6a3835" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">\r
+<con:soapui-project id="5386454e-0da6-43d5-9d7d-d96bfb5ef92d" activeEnvironment="Default" name="TestWebservices" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="37460c80-ee60-4c0c-a06f-455ca38d82b6" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://zuglinrew:8000/sunsetSErviceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://ZUGTSTWEB:7077/mockedPublicServices</con:endpoint><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint></con:endpoints><con:operation id="915b7255-1de4-4b70-8e8f-ae71f5dba69c" isOneWay="false" action="http://www.webserviceX.NET/GetSunSetRiseTime" name="GetSunSetRiseTime" bindingOperationName="GetSunSetRiseTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d463d7a3-7867-4277-9ce2-f2d16c6a3835" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">\r
    <soap:Header/>\r
    <soap:Body>\r
       <web:GetSunSetRiseTime>\r
@@ -326,7 +326,347 @@
       <soap12:address location="http://www.webservicex.net/geoipservice.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ZUGTSTWEB:7078/mockGeoIPServiceSoap12</con:endpoint><con:endpoint>http://www.webservicex.net/geoipservice.asmx</con:endpoint></con:endpoints><con:operation id="c65739ae-fc85-4c31-a723-83516e6fe617" isOneWay="false" action="http://www.webservicex.net/GetGeoIP" name="GetGeoIP" bindingOperationName="GetGeoIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="51502a40-b8b2-4df9-a5b2-9d20174bf292" isOneWay="false" action="http://www.webservicex.net/GetGeoIPContext" name="GetGeoIPContext" bindingOperationName="GetGeoIPContext" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="SunSetRiseServiceSoap12 MockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ZUGTSTWEB:7078/mockGeoIPServiceSoap12</con:endpoint><con:endpoint>http://www.webservicex.net/geoipservice.asmx</con:endpoint></con:endpoints><con:operation id="c65739ae-fc85-4c31-a723-83516e6fe617" isOneWay="false" action="http://www.webservicex.net/GetGeoIP" name="GetGeoIP" bindingOperationName="GetGeoIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="51502a40-b8b2-4df9-a5b2-9d20174bf292" isOneWay="false" action="http://www.webservicex.net/GetGeoIPContext" name="GetGeoIPContext" bindingOperationName="GetGeoIPContext" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="be3696ae-d4c6-48ec-afa9-57beaa52146a" wsaVersion="NONE" name="ZHR_WF_READ_PERS_DATA_soap12" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WF_READ_PERS_DATA_soap12" soapVersion="1_2" anonymous="optional" definition="file:/C:/Tools/WSDL/zhr_wf_read_pers_data.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Tools/WSDL/zhr_wf_read_pers_data.xml"><con:part><con:url>file:/C:/Tools/WSDL/zhr_wf_read_pers_data.xml</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:rfc:functions" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="BN__ZHR_WF_READ_PERS_DATA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+      </wsp:All>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN__ZHR_WF_READ_PERS_DATA_soap12">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+      </wsp:All>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__ZHR_WF_READ_PERS_DATA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration wsp:Optional="true" xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/">
+          <sapcentraladmin:BusinessApplicationID>00215EAA8B451EE3A98F6DE98EF35438</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__ZHR_WF_READ_PERS_DATA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char25">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="25"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric8">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8"/>
+          <xsd:pattern value="\d*"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="ZHR_WF_READ_PERS_DATA">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IV_DATUM" type="tns:char10" minOccurs="0"/>
+            <xsd:element name="IV_PERNR" type="tns:numeric8"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZHR_WF_READ_PERS_DATAResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="EV_BTRTL" type="tns:char4"/>
+            <xsd:element name="EV_BUKRS" type="tns:char4"/>
+            <xsd:element name="EV_MAKRS" type="tns:char2"/>
+            <xsd:element name="EV_NACHN" type="tns:char25"/>
+            <xsd:element name="EV_PERNR" type="tns:numeric8"/>
+            <xsd:element name="EV_VORNA" type="tns:char25"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZHR_WF_READ_PERS_DATA">
+    <wsdl:part name="parameters" element="tns:ZHR_WF_READ_PERS_DATA"/>
+  </wsdl:message>
+  <wsdl:message name="ZHR_WF_READ_PERS_DATAResponse">
+    <wsdl:part name="parameter" element="tns:ZHR_WF_READ_PERS_DATAResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ZHR_WF_READ_PERS_DATA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF__ZHR_WF_READ_PERS_DATA"/>
+    </wsp:Policy>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__ZHR_WF_READ_PERS_DATA"/>
+      </wsp:Policy>
+      <wsdl:input message="tns:ZHR_WF_READ_PERS_DATA"/>
+      <wsdl:output message="tns:ZHR_WF_READ_PERS_DATAResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZHR_WF_READ_PERS_DATA" type="tns:ZHR_WF_READ_PERS_DATA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZHR_WF_READ_PERS_DATA"/>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZHR_WF_READ_PERS_DATA_soap12" type="tns:ZHR_WF_READ_PERS_DATA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZHR_WF_READ_PERS_DATA_soap12"/>
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest" style="document"/>
+      <wsdl:input>
+        <wsoap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZHR_WF_READ_PERS_DATA">
+    <wsdl:port name="ZHR_WF_READ_PERS_DATA" binding="tns:ZHR_WF_READ_PERS_DATA">
+      <soap:address location="http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data"/>
+    </wsdl:port>
+    <wsdl:port name="ZHR_WF_READ_PERS_DATA_soap12" binding="tns:ZHR_WF_READ_PERS_DATA_soap12">
+      <wsoap12:address location="http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data</con:endpoint><con:endpoint>http://zugnbpes:8088/mockZHR_WF_READ_PERS_DATA_soap12</con:endpoint></con:endpoints><con:operation id="d2309037-84b8-42bf-9237-fc495cfe99d0" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest" name="ZHR_WF_READ_PERS_DATA" bindingOperationName="ZHR_WF_READ_PERS_DATA" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b01b351f-e05b-4194-bcf1-e94e8ace05a7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:sap-com:document:sap:rfc:functions">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <urn:ZHR_WF_READ_PERS_DATA>\r
+         <!--Optional:-->\r
+         <IV_DATUM>?</IV_DATUM>\r
+         <IV_PERNR>?</IV_PERNR>\r
+      </urn:ZHR_WF_READ_PERS_DATA>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/ZHR_WF_READ_PERS_DATA/ZHR_WF_READ_PERS_DATARequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="ca05293e-d621-4e71-9b1d-989b3d6a0f59" wsaVersion="NONE" name="ZHR_WF_READ_PERS_DATA" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WF_READ_PERS_DATA" soapVersion="1_1" anonymous="optional" definition="file:/C:/Tools/WSDL/zhr_wf_read_pers_data.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Tools/WSDL/zhr_wf_read_pers_data.xml"><con:part><con:url>file:/C:/Tools/WSDL/zhr_wf_read_pers_data.xml</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:rfc:functions" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="BN__ZHR_WF_READ_PERS_DATA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+      </wsp:All>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN__ZHR_WF_READ_PERS_DATA_soap12">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization wsp:Optional="true" xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+      </wsp:All>
+      <wsp:All>
+        <wsaw:UsingAddressing wsp:Optional="true" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__ZHR_WF_READ_PERS_DATA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration wsp:Optional="true" xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/">
+          <sapcentraladmin:BusinessApplicationID>00215EAA8B451EE3A98F6DE98EF35438</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__ZHR_WF_READ_PERS_DATA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char25">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="25"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric8">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8"/>
+          <xsd:pattern value="\d*"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="ZHR_WF_READ_PERS_DATA">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IV_DATUM" type="tns:char10" minOccurs="0"/>
+            <xsd:element name="IV_PERNR" type="tns:numeric8"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZHR_WF_READ_PERS_DATAResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="EV_BTRTL" type="tns:char4"/>
+            <xsd:element name="EV_BUKRS" type="tns:char4"/>
+            <xsd:element name="EV_MAKRS" type="tns:char2"/>
+            <xsd:element name="EV_NACHN" type="tns:char25"/>
+            <xsd:element name="EV_PERNR" type="tns:numeric8"/>
+            <xsd:element name="EV_VORNA" type="tns:char25"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZHR_WF_READ_PERS_DATA">
+    <wsdl:part name="parameters" element="tns:ZHR_WF_READ_PERS_DATA"/>
+  </wsdl:message>
+  <wsdl:message name="ZHR_WF_READ_PERS_DATAResponse">
+    <wsdl:part name="parameter" element="tns:ZHR_WF_READ_PERS_DATAResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ZHR_WF_READ_PERS_DATA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF__ZHR_WF_READ_PERS_DATA"/>
+    </wsp:Policy>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__ZHR_WF_READ_PERS_DATA"/>
+      </wsp:Policy>
+      <wsdl:input message="tns:ZHR_WF_READ_PERS_DATA"/>
+      <wsdl:output message="tns:ZHR_WF_READ_PERS_DATAResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZHR_WF_READ_PERS_DATA" type="tns:ZHR_WF_READ_PERS_DATA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZHR_WF_READ_PERS_DATA"/>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZHR_WF_READ_PERS_DATA_soap12" type="tns:ZHR_WF_READ_PERS_DATA">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZHR_WF_READ_PERS_DATA_soap12"/>
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest" style="document"/>
+      <wsdl:input>
+        <wsoap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZHR_WF_READ_PERS_DATA">
+    <wsdl:port name="ZHR_WF_READ_PERS_DATA" binding="tns:ZHR_WF_READ_PERS_DATA">
+      <soap:address location="http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data"/>
+    </wsdl:port>
+    <wsdl:port name="ZHR_WF_READ_PERS_DATA_soap12" binding="tns:ZHR_WF_READ_PERS_DATA_soap12">
+      <wsoap12:address location="http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data</con:endpoint><con:endpoint>http://zugnbpes:8088/mockZHR_WF_READ_PERS_DATA</con:endpoint></con:endpoints><con:operation id="6d5089ad-c420-471d-96d7-94a329f018c2" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest" name="ZHR_WF_READ_PERS_DATA" bindingOperationName="ZHR_WF_READ_PERS_DATA" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2ee2c043-945e-4344-9993-6f0ddeaed5cc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/zhr_wf_read_pers_data/161/zhr_wf_read_pers_data/zhr_wf_read_pers_data</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:ZHR_WF_READ_PERS_DATA>\r
+         <!--Optional:-->\r
+         <IV_DATUM>?</IV_DATUM>\r
+         <IV_PERNR>?</IV_PERNR>\r
+      </urn:ZHR_WF_READ_PERS_DATA>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest"/></con:call></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="SunSetRiseServiceSoap12 MockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
    <soap:Header/>
    <soap:Body>
       <web:GetSunSetRiseTimeResponse>
@@ -370,4 +710,28 @@
          </web:GetGeoIPResult>
       </web:GetGeoIPResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetGeoIP"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetGeoIP"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="87120616-ce96-4009-b311-1ea4cf0adf88" port="8088" path="/mockZHR_WF_READ_PERS_DATA_soap12" host="zugnbpes" name="ZHR_WF_READ_PERS_DATA_soap12 MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="ZHR_WF_READ_PERS_DATA" id="469d10bd-fddb-42b5-a50a-358368772267" interface="ZHR_WF_READ_PERS_DATA_soap12" operation="ZHR_WF_READ_PERS_DATA"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="206f06be-9808-4f8e-b6b5-2a95ed3f8942" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soap:Header/>
+   <soap:Body>
+      <urn:ZHR_WF_READ_PERS_DATAResponse>
+         <EV_BTRTL>TEST</EV_BTRTL>
+         <EV_BUKRS>DIOG</EV_BUKRS>
+         <EV_MAKRS>XY</EV_MAKRS>
+         <EV_NACHN>Frisch</EV_NACHN>
+         <EV_PERNR>12345678</EV_PERNR>
+         <EV_VORNA>Max</EV_VORNA>
+      </urn:ZHR_WF_READ_PERS_DATAResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/ZHR_WF_READ_PERS_DATA/ZHR_WF_READ_PERS_DATAResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="deac99e9-8544-4242-877a-44e70990a961" port="8088" path="/mockZHR_WF_READ_PERS_DATA" host="zugnbpes" name="ZHR_WF_READ_PERS_DATA MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="ZHR_WF_READ_PERS_DATA" id="39a2d5ee-48bf-449c-8c72-0d030de97e9f" interface="ZHR_WF_READ_PERS_DATA" operation="ZHR_WF_READ_PERS_DATA"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="99c282fa-f70f-4980-afb8-615bc6516263" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZHR_WF_READ_PERS_DATAResponse>
+         <EV_BTRTL>TEST</EV_BTRTL>
+         <EV_BUKRS>DIOG</EV_BUKRS>
+         <EV_MAKRS>XY</EV_MAKRS>
+         <EV_NACHN>Frisch</EV_NACHN>
+         <EV_PERNR>12345678</EV_PERNR>
+         <EV_VORNA>Max</EV_VORNA>
+      </urn:ZHR_WF_READ_PERS_DATAResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
