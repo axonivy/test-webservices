@@ -1005,7 +1005,19 @@
          </web:GetGeoIPResult>
       </web:GetGeoIPResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetGeoIP"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="87120616-ce96-4009-b311-1ea4cf0adf88" port="8088" path="/mockZHR_WF_READ_PERS_DATA_soap12" host="zugnbpes" name="ZHR_WF_READ_PERS_DATA_soap12 MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="ZHR_WF_READ_PERS_DATA" id="469d10bd-fddb-42b5-a50a-358368772267" interface="ZHR_WF_READ_PERS_DATA_soap12" operation="ZHR_WF_READ_PERS_DATA"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="206f06be-9808-4f8e-b6b5-2a95ed3f8942" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetGeoIP"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="ZHR_WF_READ_PERS_DATA" id="ea377298-dedd-43b4-b1e4-7e71b3ec1396" interface="ZHR_WF_READ_PERS_DATA_soap12" operation="ZHR_WF_READ_PERS_DATA"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="021be247-82f0-464a-bee7-3b9a7222d236" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soap:Header/>
+   <soap:Body>
+      <urn:ZHR_WF_READ_PERS_DATAResponse>
+         <EV_BTRTL>?</EV_BTRTL>
+         <EV_BUKRS>?</EV_BUKRS>
+         <EV_MAKRS>?</EV_MAKRS>
+         <EV_NACHN>?</EV_NACHN>
+         <EV_PERNR>?</EV_PERNR>
+         <EV_VORNA>?</EV_VORNA>
+      </urn:ZHR_WF_READ_PERS_DATAResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/ZHR_WF_READ_PERS_DATA/ZHR_WF_READ_PERS_DATAResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="87120616-ce96-4009-b311-1ea4cf0adf88" port="8088" path="/mockZHR_WF_READ_PERS_DATA_soap12" host="zugnbpes" name="ZHR_WF_READ_PERS_DATA_soap12 MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="ZHR_WF_READ_PERS_DATA" id="469d10bd-fddb-42b5-a50a-358368772267" interface="ZHR_WF_READ_PERS_DATA_soap12" operation="ZHR_WF_READ_PERS_DATA"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="206f06be-9808-4f8e-b6b5-2a95ed3f8942" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
    <soap:Header/>
    <soap:Body>
       <urn:ZHR_WF_READ_PERS_DATAResponse>
