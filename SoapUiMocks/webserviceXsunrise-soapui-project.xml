@@ -961,7 +961,106 @@
          <IV_PERNR>?</IV_PERNR>\r
       </urn:ZHR_WF_READ_PERS_DATA>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="b05bf3ee-4065-4824-ac27-6c92c4518ffb" wsaVersion="NONE" name="ZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12" soapVersion="1_2" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/ZHR_WF_READ_PERS_DATA_WithoutPolicy/161/ZHR_WF_READ_PERS_DATA_WithoutPolicy/ZHR_WF_READ_PERS_DATA_WithoutPolicy</con:endpoint></con:endpoints><con:operation id="234d8f2c-e37a-4082-9061-cfdbb7a4a4a6" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA_WithoutPolicy:ZHR_WF_READ_PERS_DATA_WithoutPolicyRequest" name="ZHR_WF_READ_PERS_DATA_WithoutPolicy" bindingOperationName="ZHR_WF_READ_PERS_DATA_WithoutPolicy" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="54fc8a2c-bfd4-42e7-85ff-7d68909aeffd" wsaVersion="NONE" name="ZHR_WF_READ_PERS_DATA_WithoutPolicy" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WF_READ_PERS_DATA_WithoutPolicy" soapVersion="1_1" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml"><con:part><con:url>http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:rfc:functions" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA:ZHR_WF_READ_PERS_DATARequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="b05bf3ee-4065-4824-ac27-6c92c4518ffb" wsaVersion="NONE" name="ZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12" soapVersion="1_2" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml"><con:part><con:url>http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:rfc:functions" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char25">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="25"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric8">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8"/>
+          <xsd:pattern value="\d*"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IV_DATUM" type="tns:char10" minOccurs="0"/>
+            <xsd:element name="IV_PERNR" type="tns:numeric8"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZHR_WF_READ_PERS_DATA_WithoutPolicyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="EV_BTRTL" type="tns:char4"/>
+            <xsd:element name="EV_BUKRS" type="tns:char4"/>
+            <xsd:element name="EV_MAKRS" type="tns:char2"/>
+            <xsd:element name="EV_NACHN" type="tns:char25"/>
+            <xsd:element name="EV_PERNR" type="tns:numeric8"/>
+            <xsd:element name="EV_VORNA" type="tns:char25"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+    <wsdl:part name="parameters" element="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicy"/>
+  </wsdl:message>
+  <wsdl:message name="ZHR_WF_READ_PERS_DATA_WithoutPolicyResponse">
+    <wsdl:part name="parameter" element="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicyResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+      <wsdl:input message="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicy"/>
+      <wsdl:output message="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicyResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZHR_WF_READ_PERS_DATA_WithoutPolicy" type="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+    >
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA_WithoutPolicy:ZHR_WF_READ_PERS_DATA_WithoutPolicyRequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12" type="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA_WithoutPolicy:ZHR_WF_READ_PERS_DATA_WithoutPolicyRequest" style="document"/>
+      <wsdl:input>
+        <wsoap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+    <wsdl:port name="ZHR_WF_READ_PERS_DATA_WithoutPolicy" binding="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicy">
+      <soap:address location="http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/ZHR_WF_READ_PERS_DATA_WithoutPolicy/161/ZHR_WF_READ_PERS_DATA_WithoutPolicy/ZHR_WF_READ_PERS_DATA_WithoutPolicy"/>
+    </wsdl:port>
+    <wsdl:port name="ZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12" binding="tns:ZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12">
+      <wsoap12:address location="http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/ZHR_WF_READ_PERS_DATA_WithoutPolicy/161/ZHR_WF_READ_PERS_DATA_WithoutPolicy/ZHR_WF_READ_PERS_DATA_WithoutPolicy"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://D30.migros.ch:8000/sap/bc/srt/rfc/sap/ZHR_WF_READ_PERS_DATA_WithoutPolicy/161/ZHR_WF_READ_PERS_DATA_WithoutPolicy/ZHR_WF_READ_PERS_DATA_WithoutPolicy</con:endpoint></con:endpoints><con:operation id="234d8f2c-e37a-4082-9061-cfdbb7a4a4a6" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZHR_WF_READ_PERS_DATA_WithoutPolicy:ZHR_WF_READ_PERS_DATA_WithoutPolicyRequest" name="ZHR_WF_READ_PERS_DATA_WithoutPolicy" bindingOperationName="ZHR_WF_READ_PERS_DATA_WithoutPolicy" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="54fc8a2c-bfd4-42e7-85ff-7d68909aeffd" wsaVersion="NONE" name="ZHR_WF_READ_PERS_DATA_WithoutPolicy" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WF_READ_PERS_DATA_WithoutPolicy" soapVersion="1_1" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml"><con:part><con:url>http://zugtstweb/test-wsdls/wsdl/sapServiceWsdlWithoutPolicy/zhr_wf_read_pers_data_without_policy.xml</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:rfc:functions" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
   <wsdl:documentation>
     <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
   </wsdl:documentation>
