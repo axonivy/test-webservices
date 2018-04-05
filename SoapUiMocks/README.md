@@ -10,5 +10,8 @@
 1. Select a free Port on the next screen, continue with ok
 1. Add response test data into `Response 1`
 1. Save the project
+1. Close SoapUI
+1. Open the project XML in an editor and replace occurences of <your hostname> with zugtstweb
+
 
 (For some reasons some of the original WSDLs need to be available when starting the Mock service)
