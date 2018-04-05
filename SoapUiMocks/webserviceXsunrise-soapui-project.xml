@@ -5199,7 +5199,210 @@
       <wsoap12:address location="https://myservice.com/sap/bc/srt/rfc/sap/zebc_cop_pug_get_es_data/100/zebc_cop_pug_get_es_data/zebc_cop_pug_get_es_data"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://zugtstweb:7081/mockZEBC_COP_PUG_GET_ES_DATA_soap12</con:endpoint><con:endpoint>https://myservice.com/sap/bc/srt/rfc/sap/zebc_cop_pug_get_es_data/100/zebc_cop_pug_get_es_data/zebc_cop_pug_get_es_data</con:endpoint></con:endpoints><con:operation id="a79c245e-4e4d-4a55-80cc-e808be0c5383" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZEBC_COP_PUG_GET_ES_DATA:Z_EBC_COP_PUG_ES_GET_DATARequest" name="Z_EBC_COP_PUG_ES_GET_DATA" bindingOperationName="Z_EBC_COP_PUG_ES_GET_DATA" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://zugtstweb:7081/mockZEBC_COP_PUG_GET_ES_DATA_soap12</con:endpoint><con:endpoint>https://myservice.com/sap/bc/srt/rfc/sap/zebc_cop_pug_get_es_data/100/zebc_cop_pug_get_es_data/zebc_cop_pug_get_es_data</con:endpoint></con:endpoints><con:operation id="a79c245e-4e4d-4a55-80cc-e808be0c5383" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:ZEBC_COP_PUG_GET_ES_DATA:Z_EBC_COP_PUG_ES_GET_DATARequest" name="Z_EBC_COP_PUG_ES_GET_DATA" bindingOperationName="Z_EBC_COP_PUG_ES_GET_DATA" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="0068954f-d740-46a6-89b2-e95e7e8b2177" wsaVersion="NONE" name="ZHR_WSIF_AXONIVY_MSS" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WSIF_AXONIVY_MSS" soapVersion="1_1" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sapMtomBinary/zhr_wsif_axonivy_BL_ZZ.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss</con:endpoint></con:endpoints><con:operation id="f7c252b9-941c-4c09-b30b-a17c5a88c755" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_EMPLOYEE_LISTRequest" name="Z_HR_WS_GET_EMPLOYEE_LIST" bindingOperationName="Z_HR_WS_GET_EMPLOYEE_LIST" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="f1e1cc70-3ef0-4fe8-acfc-369730fa07ea" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_TIMESHEET_EMPLOYEERequest" name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" bindingOperationName="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="d111bd8c-611d-4acf-a5f9-f0e76942fb2d" wsaVersion="NONE" name="ZHR_WSIF_AXONIVY_MSS_soap12" type="wsdl" bindingName="{urn:sap-com:document:sap:rfc:functions}ZHR_WSIF_AXONIVY_MSS_soap12" soapVersion="1_2" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sapMtomBinary/zhr_wsif_axonivy_BL_ZZ.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zugtstweb/test-wsdls/wsdl/sapMtomBinary/zhr_wsif_axonivy_BL_ZZ.wsdl"><con:part><con:url>http://zugtstweb/test-wsdls/wsdl/sapMtomBinary/zhr_wsif_axonivy_BL_ZZ.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:rfc:functions">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char15">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="15"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char220">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="220"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char40">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3"/>
+          <xsd:pattern value="\d*"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric8">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8"/>
+          <xsd:pattern value="\d*"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="string">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:complexType name="ZHR_WSIF_GET_EMPLOYEE_LIST">
+        <xsd:sequence>
+          <xsd:element name="USERNAME" type="tns:string"/>
+          <xsd:element name="EVALUATION_FROM" type="tns:string"/>
+          <xsd:element name="EVALUATION_TO" type="tns:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZHR_WSIF_EMPLOYEE_LIST">
+        <xsd:sequence>
+          <xsd:element name="EMPLOYEE_NO" type="tns:numeric8"/>
+          <xsd:element name="TITEL" type="tns:char15"/>
+          <xsd:element name="FIRST_NAME" type="tns:char40"/>
+          <xsd:element name="LAST_NAME" type="tns:char40"/>
+          <xsd:element name="DATE_OF_BIRTH" type="tns:numeric8"/>
+          <xsd:element name="VALID_FROM" type="tns:numeric8"/>
+          <xsd:element name="VALID_TO" type="tns:numeric8"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZHR_WSIF_MESSAGE_LINE">
+        <xsd:sequence>
+          <xsd:element name="TYPE" type="tns:char1"/>
+          <xsd:element name="ID" type="tns:char20"/>
+          <xsd:element name="NUMBER" type="tns:numeric3"/>
+          <xsd:element name="MESSAGE" type="tns:char220"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZHR_WSIF_GET_TIME_EMPLOYEE">
+        <xsd:sequence>
+          <xsd:element name="EMPLOYEE_NO" type="tns:string"/>
+          <xsd:element name="EVALUATION_FROM" type="tns:string"/>
+          <xsd:element name="EVALUATION_TO" type="tns:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZHR_WSIF_PDF_DATA">
+        <xsd:sequence>
+          <xsd:element name="USERNAME" type="tns:string"/>
+          <xsd:element name="PERIOD_YEAR" type="tns:string"/>
+          <xsd:element name="PERIOD_MONTH" type="tns:string"/>
+          <xsd:element name="EVALUATION_FROM" type="tns:string"/>
+          <xsd:element name="EVALUATION_TO" type="tns:string"/>
+          <xsd:element name="PDFDATA" type="xsd:base64Binary"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZHR_WSIF_EMPLOYEE_LIST_TAB">
+        <xsd:sequence>
+          <xsd:element name="item" type="tns:ZHR_WSIF_EMPLOYEE_LIST" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZHR_WSIF_MESSAGE_TAB">
+        <xsd:sequence>
+          <xsd:element name="item" type="tns:ZHR_WSIF_MESSAGE_LINE" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Z_HR_WS_GET_EMPLOYEE_LIST">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IS_WS_PARAMETER" type="tns:ZHR_WSIF_GET_EMPLOYEE_LIST"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_HR_WS_GET_EMPLOYEE_LISTResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ET_EMPLOYEE_LIST" type="tns:ZHR_WSIF_EMPLOYEE_LIST_TAB"/>
+            <xsd:element name="ET_MESSAGES" type="tns:ZHR_WSIF_MESSAGE_TAB"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IS_WS_PARAMETER" type="tns:ZHR_WSIF_GET_TIME_EMPLOYEE"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ES_PDF_DATA" type="tns:ZHR_WSIF_PDF_DATA"/>
+            <xsd:element name="ET_MESSAGES" type="tns:ZHR_WSIF_MESSAGE_TAB"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Z_HR_WS_GET_EMPLOYEE_LIST">
+    <wsdl:part name="parameters" element="tns:Z_HR_WS_GET_EMPLOYEE_LIST"/>
+  </wsdl:message>
+  <wsdl:message name="Z_HR_WS_GET_EMPLOYEE_LISTResponse">
+    <wsdl:part name="parameter" element="tns:Z_HR_WS_GET_EMPLOYEE_LISTResponse"/>
+  </wsdl:message>
+  <wsdl:message name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE">
+    <wsdl:part name="parameters" element="tns:Z_HR_WS_GET_TIMESHEET_EMPLOYEE"/>
+  </wsdl:message>
+  <wsdl:message name="Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse">
+    <wsdl:part name="parameter" element="tns:Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="zhr_wsif_axonivfy_mss">
+    <wsdl:operation name="Z_HR_WS_GET_EMPLOYEE_LIST">
+      <wsdl:input message="tns:Z_HR_WS_GET_EMPLOYEE_LIST"/>
+      <wsdl:output message="tns:Z_HR_WS_GET_EMPLOYEE_LISTResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE">
+      <wsdl:input message="tns:Z_HR_WS_GET_TIMESHEET_EMPLOYEE"/>
+      <wsdl:output message="tns:Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZHR_WSIF_AXONIVY_MSS" type="tns:zhr_wsif_axonivfy_mss">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="Z_HR_WS_GET_EMPLOYEE_LIST">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_EMPLOYEE_LISTRequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_TIMESHEET_EMPLOYEERequest" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZHR_WSIF_AXONIVY_MSS_soap12" type="tns:zhr_wsif_axonivfy_mss">
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="Z_HR_WS_GET_EMPLOYEE_LIST">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_EMPLOYEE_LISTRequest" style="document"/>
+      <wsdl:input>
+        <wsoap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_TIMESHEET_EMPLOYEERequest" style="document"/>
+      <wsdl:input>
+        <wsoap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZHR_WSIF_AXONIVY_MSS">
+    <wsdl:port name="ZHR_WSIF_AXONIVY_MSS" binding="tns:ZHR_WSIF_AXONIVY_MSS">
+      <soap:address location="http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss"/>
+    </wsdl:port>
+    <wsdl:port name="ZHR_WSIF_AXONIVY_MSS_soap12" binding="tns:ZHR_WSIF_AXONIVY_MSS_soap12">
+      <wsoap12:address location="http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss</con:endpoint><con:endpoint>http://zugtstweb:7082/mockZHR_WSIF_AXONIVY_MSS_soap12</con:endpoint></con:endpoints><con:operation id="0fbe62b9-b877-436d-a3a6-f53ad80ec42a" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_EMPLOYEE_LISTRequest" name="Z_HR_WS_GET_EMPLOYEE_LIST" bindingOperationName="Z_HR_WS_GET_EMPLOYEE_LIST" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="4293a953-e24d-4b6f-8897-aad8e2509b84" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_TIMESHEET_EMPLOYEERequest" name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" bindingOperationName="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
    <soap:Header/>
    <soap:Body>
       <web:GetSunSetRiseTimeResponse>
@@ -6814,4 +7017,54 @@
          </ET_RETURN>
       </urn:Z_EBC_COP_PUG_ES_GET_DATAResponse>
    </soap:Body>
-</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/ZEBC_COP_PUG_GET_ES_DATA/Z_EBC_COP_PUG_ES_GET_DATAResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/ZEBC_COP_PUG_GET_ES_DATA/Z_EBC_COP_PUG_ES_GET_DATAResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="a1405d41-9471-4b16-842e-8ac76b694770" port="7082" path="/mockZHR_WSIF_AXONIVY_MSS_soap12" host="zugtstweb" name="ZHR_WSIF_AXONIVY_MSS_soap12 MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="Z_HR_WS_GET_EMPLOYEE_LIST" id="c9a325d7-ae1a-43c3-be9c-f4a3ddb27193" interface="ZHR_WSIF_AXONIVY_MSS_soap12" operation="Z_HR_WS_GET_EMPLOYEE_LIST"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="c5af559e-ae76-46c8-a55e-a7457e29531d" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:Z_HR_WS_GET_EMPLOYEE_LISTResponse>
+         <ET_EMPLOYEE_LIST>
+            <!--Zero or more repetitions:-->
+            <item>
+               <EMPLOYEE_NO>554</EMPLOYEE_NO>
+               <TITEL>Dr.</TITEL>
+               <FIRST_NAME>John</FIRST_NAME>
+               <LAST_NAME>No</LAST_NAME>
+               <DATE_OF_BIRTH>20101010</DATE_OF_BIRTH>
+               <VALID_FROM>1</VALID_FROM>
+               <VALID_TO>2</VALID_TO>
+            </item>
+         </ET_EMPLOYEE_LIST>
+         <ET_MESSAGES>
+            <!--Zero or more repetitions:-->
+            <item>
+               <TYPE>F</TYPE>
+               <ID>G3</ID>
+               <NUMBER>4</NUMBER>
+               <MESSAGE>This is a message from the Internet: stop eating tide pods.</MESSAGE>
+            </item>
+         </ET_MESSAGES>
+      </urn:Z_HR_WS_GET_EMPLOYEE_LISTResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/zhr_wsif_axonivfy_mss/Z_HR_WS_GET_EMPLOYEE_LISTResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" id="2446d5cb-e80a-4639-87d1-2c18de756ff1" interface="ZHR_WSIF_AXONIVY_MSS_soap12" operation="Z_HR_WS_GET_TIMESHEET_EMPLOYEE"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="031cbe2d-862f-4b17-b7eb-7b31b86b3724" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse>
+         <ES_PDF_DATA>
+            <USERNAME>johnno</USERNAME>
+            <PERIOD_YEAR>2018</PERIOD_YEAR>
+            <PERIOD_MONTH>04</PERIOD_MONTH>
+            <EVALUATION_FROM>3</EVALUATION_FROM>
+            <EVALUATION_TO>2</EVALUATION_TO>
+            <PDFDATA>cid:623574020217</PDFDATA>
+         </ES_PDF_DATA>
+         <ET_MESSAGES>
+            <!--Zero or more repetitions:-->
+            <item>
+               <TYPE>G</TYPE>
+               <ID>42</ID>
+               <NUMBER>1</NUMBER>
+               <MESSAGE>My bonnie is over the ocean.</MESSAGE>
+            </item>
+         </ET_MESSAGES>
+      </urn:Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/zhr_wsif_axonivfy_mss/Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
