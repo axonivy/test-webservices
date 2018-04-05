@@ -49,6 +49,7 @@
 	    <artifactId>xmlbeans</artifactId>
 	    <version>2.6.0</version>
 	</dependency>
+	
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-frontend-jaxws</artifactId>
@@ -63,6 +64,11 @@
 		<groupId>org.apache.cxf</groupId>
 		<artifactId>cxf-rt-ws-security</artifactId>
 		<version>${cxf.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.cxf</groupId>
+	    <artifactId>cxf-rt-ws-addr</artifactId>
+	    <version>${cxf.version}</version>
 	</dependency>
   </dependencies>
 </project>

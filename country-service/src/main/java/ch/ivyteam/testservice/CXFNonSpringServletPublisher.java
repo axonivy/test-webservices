@@ -16,6 +16,7 @@ import org.apache.cxf.interceptor.InterceptorProvider;
 import org.apache.cxf.jaxws.EndpointImpl;
 import org.apache.cxf.transport.servlet.CXFNonSpringServlet;
 import org.apache.cxf.ws.addressing.WSAddressingFeature;
+import org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider;
 import org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor;
 import org.apache.wss4j.common.ConfigurationConstants;
 import org.apache.wss4j.common.WSS4JConstants;
@@ -39,6 +40,7 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     publishNativeTypeService();
     publishWsSecurityService();
     publishWsAddressingService();
+    publishWsAddressingPolicyService();
   }
 
   private void publishCountryService()
@@ -71,6 +73,16 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     feature.setAddressingRequired(true);
     endpoint.getFeatures().add(feature);
     endpoint.publish("/country-wsaddressing");
+  }
+  
+  private void publishWsAddressingPolicyService()
+  {
+    EndpointImpl endpoint = (EndpointImpl) Endpoint.create(new CountryService());
+    WSAddressingFeature feature = new WSAddressingFeature();
+    feature.setAddressingRequired(true);
+    endpoint.getFeatures().add(feature);
+    new AddressingPolicyInterceptorProvider(endpoint.getBus());
+    endpoint.publish("/country-wsaddressing-policy");
   }
 
   public static class PasswordCallback implements CallbackHandler
