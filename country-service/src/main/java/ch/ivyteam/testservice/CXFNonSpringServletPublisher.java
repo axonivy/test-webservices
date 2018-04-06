@@ -23,6 +23,7 @@ import org.apache.wss4j.common.ext.WSPasswordCallback;
 
 import ch.ivyteam.testservice.country.CountryService;
 import ch.ivyteam.testservice.policy.GreetPolicyService;
+import ch.ivyteam.testservice.policy.SecureGreetPolicyService;
 import ch.ivyteam.testservice.types.NativeTypeService;
 
 @WebServlet("/webservices/*")
@@ -40,7 +41,8 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     publishNativeTypeService();
     publishWsSecurityService();
     publishWsAddressingService();
-    publishGreetPolicyService();
+    publishGreetPolicyAddressingService();
+    publishSecureGreetPolicyService();
   }
 
   private void publishCountryService()
@@ -56,14 +58,7 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
   private void publishWsSecurityService()
   {
     Endpoint endpoint = Endpoint.publish("/country-wssecurity", new CountryService());
-    InterceptorProvider interceptorProvider = (InterceptorProvider) endpoint;
-    Map<String, Object> inProps = new HashMap<>();
-    WSS4JInInterceptor wssIn = new WSS4JInInterceptor(inProps);
-    inProps.put(ConfigurationConstants.ACTION, ConfigurationConstants.USERNAME_TOKEN);
-    inProps.put(ConfigurationConstants.MUST_UNDERSTAND, false);
-    inProps.put(ConfigurationConstants.PASSWORD_TYPE, WSS4JConstants.PW_TEXT);
-    inProps.put(ConfigurationConstants.PW_CALLBACK_CLASS, PasswordCallback.class.getName());
-    interceptorProvider.getInInterceptors().add(wssIn);
+    addWsSecurityInterceptor(endpoint);
   }
 
   private void publishWsAddressingService()
@@ -75,13 +70,29 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     endpoint.publish("/country-wsaddressing");
   }
   
-  private void publishGreetPolicyService()
+  private void publishGreetPolicyAddressingService()
   {
-    EndpointImpl endpoint = (EndpointImpl) Endpoint.create(new GreetPolicyService());
-    WSAddressingFeature feature = new WSAddressingFeature();
-    feature.setAddressingRequired(true);
-    endpoint.getFeatures().add(feature);
-    endpoint.publish("/greet-policy");
+    Endpoint.publish("/greet-policy-wsaddressing", new GreetPolicyService());
+    // ws-addr feature must not be added: implicitly added trough policy on server side!
+  }
+  
+  private void publishSecureGreetPolicyService()
+  {
+    Endpoint endpoint = Endpoint.publish("/greet-policy-wss", new SecureGreetPolicyService());
+    addWsSecurityInterceptor(endpoint);
+  }
+
+
+  private static void addWsSecurityInterceptor(Endpoint endpoint)
+  {
+    InterceptorProvider interceptorProvider = (InterceptorProvider) endpoint;
+    Map<String, Object> inProps = new HashMap<>();
+    WSS4JInInterceptor wssIn = new WSS4JInInterceptor(inProps);
+    inProps.put(ConfigurationConstants.ACTION, ConfigurationConstants.USERNAME_TOKEN);
+    inProps.put(ConfigurationConstants.MUST_UNDERSTAND, false);
+    inProps.put(ConfigurationConstants.PASSWORD_TYPE, WSS4JConstants.PW_TEXT);
+    inProps.put(ConfigurationConstants.PW_CALLBACK_CLASS, PasswordCallback.class.getName());
+    interceptorProvider.getInInterceptors().add(wssIn);
   }
 
   public static class PasswordCallback implements CallbackHandler

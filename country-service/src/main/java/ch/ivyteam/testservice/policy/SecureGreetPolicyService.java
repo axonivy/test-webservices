@@ -13,12 +13,11 @@ import org.apache.cxf.annotations.WSDLDocumentationCollection;
 
 @WSDLDocumentationCollection({
     @WSDLDocumentation(placement = TOP, value = 
-            "Policies declare that this service will not run without ws-addressing headers.\n"
-            + "The policy will install Addressing interceptors on client and server side!"),
+            "Policies declare that this service will not run without ws-security UsernameToken headers")
 })
 @WebService
-@Policy(uri = "AddressingPolicy.xml", placement = BINDING)
-public class GreetPolicyService
+@Policy(uri = "SecurityPolicy.xml", placement = BINDING)
+public class SecureGreetPolicyService
 {
   @WebMethod
   public String greet(@WebParam(name = "greet") String message)
