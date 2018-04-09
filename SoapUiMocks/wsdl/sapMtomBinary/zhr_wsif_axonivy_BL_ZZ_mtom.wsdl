@@ -159,7 +159,7 @@
 			<wsdl:output message="tns:Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse" />
 		</wsdl:operation>
 	</wsdl:portType>
-	<wsdl:binding name="ZHR_WSIF_AXONIVY_MSS" type="tns:zhr_wsif_axonivfy_mss">
+	<wsdl:binding name="ZHR_WSIF_AXONIVY_MSS_MTOM" type="tns:zhr_wsif_axonivfy_mss">
 		<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
 			style="document" />
 		<wsdl:operation name="Z_HR_WS_GET_EMPLOYEE_LIST">
@@ -185,7 +185,7 @@
 			</wsdl:output>
 		</wsdl:operation>
 	</wsdl:binding>
-	<wsdl:binding name="ZHR_WSIF_AXONIVY_MSS_soap12" type="tns:zhr_wsif_axonivfy_mss">
+	<wsdl:binding name="ZHR_WSIF_AXONIVY_MSS_MTOM_soap12" type="tns:zhr_wsif_axonivfy_mss">
 		<wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http"
 			style="document" />
 		<wsdl:operation name="Z_HR_WS_GET_EMPLOYEE_LIST">
@@ -211,12 +211,12 @@
 			</wsdl:output>
 		</wsdl:operation>
 	</wsdl:binding>
-	<wsdl:service name="ZHR_WSIF_AXONIVY_MSS">
-		<wsdl:port name="ZHR_WSIF_AXONIVY_MSS" binding="tns:ZHR_WSIF_AXONIVY_MSS">
+	<wsdl:service name="ZHR_WSIF_AXONIVY_MSS_MTOM">
+		<wsdl:port name="ZHR_WSIF_AXONIVY_MSS_MTOM" binding="tns:ZHR_WSIF_AXONIVY_MSS_MTOM">
 			<soap:address
 				location="http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss" />
 		</wsdl:port>
-		<wsdl:port name="ZHR_WSIF_AXONIVY_MSS_soap12" binding="tns:ZHR_WSIF_AXONIVY_MSS_soap12">
+		<wsdl:port name="ZHR_WSIF_AXONIVY_MSS_MTOM_soap12" binding="tns:ZHR_WSIF_AXONIVY_MSS_MTOM_soap12">
 			<wsoap12:address
 				location="http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss" />
 		</wsdl:port>
