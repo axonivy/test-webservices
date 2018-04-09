@@ -2,7 +2,7 @@
 <wsdl:definitions targetNamespace="urn:sap-com:document:sap:rfc:functions"
 	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/"
-	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
 	xmlns:tns="urn:sap-com:document:sap:rfc:functions">
 	<wsdl:documentation>
 		<sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
