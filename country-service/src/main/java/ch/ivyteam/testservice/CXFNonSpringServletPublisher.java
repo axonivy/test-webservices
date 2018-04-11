@@ -22,6 +22,8 @@ import org.apache.wss4j.common.WSS4JConstants;
 import org.apache.wss4j.common.ext.WSPasswordCallback;
 
 import ch.ivyteam.testservice.country.CountryService;
+import ch.ivyteam.testservice.filedownload.FileDownloadService;
+import ch.ivyteam.testservice.fileupload.FileUploadHasherService;
 import ch.ivyteam.testservice.policy.GreetPolicyService;
 import ch.ivyteam.testservice.policy.SecureGreetPolicyService;
 import ch.ivyteam.testservice.types.NativeTypeService;
@@ -43,6 +45,8 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     publishWsAddressingService();
     publishGreetPolicyAddressingService();
     publishSecureGreetPolicyService();
+    publishFileUploadHasherService();
+    publishFileDownloadService();
   }
 
   private void publishCountryService()
@@ -81,7 +85,16 @@ public class CXFNonSpringServletPublisher extends CXFNonSpringServlet
     Endpoint endpoint = Endpoint.publish("/greet-policy-wss", new SecureGreetPolicyService());
     addWsSecurityInterceptor(endpoint);
   }
-
+  
+  private void publishFileUploadHasherService()
+  {
+    Endpoint.publish("/fileUploadHasherService", new FileUploadHasherService());
+  }
+  
+  private void publishFileDownloadService()
+  {
+    Endpoint.publish("/fileDownloadService", new FileDownloadService());
+  }
 
   private static void addWsSecurityInterceptor(Endpoint endpoint)
   {
