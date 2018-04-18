@@ -12,33 +12,7 @@
 1. Save the project
 1. Close SoapUI
 1. Open the project XML in an editor and replace occurences of <your hostname> with zugtstweb
-1. Add the Generated WSDL URL to the list in this file
+1. Add the Generated WSDL URL to the list on this page: https://jira.axonivy.com/confluence/display/IVYTEAM/ZugTstWeb
 
 
 (For some reasons some of the original WSDLs need to be available when starting the Mock service)
-
-
-Existing services:
-
-SAP WS with Policy:
-http://zugtstweb:7078/mockZHR_WF_READ_PERS_DATA_soap12?WSDL
-
-
-SAP WS without Policy:
-http://zugtstweb:7079/mockZHR_WF_READ_PERS_DATA_WithoutPolicy_soap12?WSDL
-
-
-SAP WS with lists (getItem):
-http://zugtstweb:7081/mockZEBC_COP_PUG_GET_ES_DATA_soap12?WSDL
-
-
-SAP WS with embedded Binary:
-http://zugtstweb:7082/mockZHR_WSIF_AXONIVY_MSS_soap12?WSDL
-
-
-SAP WS with MTOM Binary Attachment:
-http://zugtstweb:7084/mockZHR_WSIF_AXONIVY_MSS_MTOM_soap12?WSDL
-
-
-Docservice WS (Lists as parameter, causes generation problems):
-http://zugtstweb:7080/mockacme2_eakte?WSDL
