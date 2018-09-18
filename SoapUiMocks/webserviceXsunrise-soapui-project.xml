@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="5386454e-0da6-43d5-9d7d-d96bfb5ef92d" activeEnvironment="Default" name="TestWebservices" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="37460c80-ee60-4c0c-a06f-455ca38d82b6" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zugtstweb/test-wsdls/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl"><con:part><con:url>http://zugtstweb/test-wsdls/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webserviceX.NET/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<con:soapui-project id="5386454e-0da6-43d5-9d7d-d96bfb5ef92d" activeEnvironment="Default" name="TestWebservices" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="37460c80-ee60-4c0c-a06f-455ca38d82b6" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://zugtstweb/test-wsdls/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://zugtstweb/test-wsdls/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl"><con:part><con:url>http://zugtstweb/test-wsdls/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webserviceX.NET/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET/">
       <s:element name="GetSunSetRiseTime">
@@ -5605,7 +5605,107 @@
       <wsoap12:address location="http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss</con:endpoint><con:endpoint>http://zugtstweb:7084/mockZHR_WSIF_AXONIVY_MSS_MTOM_soap12</con:endpoint></con:endpoints><con:operation id="605201f5-24f3-48db-8fb2-90a2178f62c7" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_EMPLOYEE_LISTRequest" name="Z_HR_WS_GET_EMPLOYEE_LIST" bindingOperationName="Z_HR_WS_GET_EMPLOYEE_LIST" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="6231e1ba-4867-4513-9274-ba7d1b377b6e" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_TIMESHEET_EMPLOYEERequest" name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" bindingOperationName="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://AAD0SAP14.myhost.com/sap/bc/srt/rfc/sap/zhr_wsif_axonivfy_mss/004/zhr_wsif_axonivy_mss/zhr_wsif_axonivy_mss</con:endpoint><con:endpoint>http://zugtstweb:7084/mockZHR_WSIF_AXONIVY_MSS_MTOM_soap12</con:endpoint></con:endpoints><con:operation id="605201f5-24f3-48db-8fb2-90a2178f62c7" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_EMPLOYEE_LISTRequest" name="Z_HR_WS_GET_EMPLOYEE_LIST" bindingOperationName="Z_HR_WS_GET_EMPLOYEE_LIST" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="6231e1ba-4867-4513-9274-ba7d1b377b6e" isOneWay="false" action="urn:sap-com:document:sap:rfc:functions:zhr_wsif_axonivfy_mss:Z_HR_WS_GET_TIMESHEET_EMPLOYEERequest" name="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" bindingOperationName="Z_HR_WS_GET_TIMESHEET_EMPLOYEE" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="f73af631-d2b8-489a-9b20-062acb973fc8" wsaVersion="NONE" name="inOutParams" type="wsdl" bindingName="{urn:ActicleInsert}inOutParams" soapVersion="1_1" anonymous="optional" definition="file:/C:/inetpub/wwwroot/test-wsdls/wsdl/inoutParamsServiceWsdl/inoutParamsService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/inetpub/wwwroot/test-wsdls/wsdl/inoutParamsServiceWsdl/inoutParamsService.wsdl"><con:part><con:url>file:/C:/inetpub/wwwroot/test-wsdls/wsdl/inoutParamsServiceWsdl/inoutParamsService.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="inOutParams" targetNamespace="urn:ActicleInsert" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="urn:ActicleInsert" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:prodata="urn:schemas-progress-com:xml-prodata:0001" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:S1="urn:soap-fault:details" xmlns:S2="urn:ActicleInsert:inOutParams">
+  <wsdl:documentation>Author=Javier Garcia, EncodingType=RPC_LITERAL, WSA_Product=11.6 - Fri Oct 16 18:10:06 EDT 2015</wsdl:documentation>
+  <wsdl:types>
+    <schema elementFormDefault="unqualified" targetNamespace="urn:soap-fault:details" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="FaultDetail">
+        <sequence>
+          <element name="errorMessage" type="xsd:string"/>
+          <element name="requestID" type="xsd:string"/>
+        </sequence>
+      </complexType>
+    </schema>
+    <schema elementFormDefault="unqualified" targetNamespace="urn:ActicleInsert:inOutParams" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="getCurrency_ttFrwParam">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="ttFrwRow" type="S2:getCurrency_ttFrwRow"/>
+        </sequence>
+      </complexType>
+      <complexType name="getCurrency_ttFrwRow">
+        <sequence>
+          <element name="cFrw" nillable="true" type="xsd:string"/>
+          <element name="cBez" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="getLanguage_ttSprcdParam">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="ttSprcdRow" type="S2:getLanguage_ttSprcdRow"/>
+        </sequence>
+      </complexType>
+      <complexType name="getLanguage_ttSprcdRow">
+        <sequence>
+          <element name="iSprcd" nillable="true" type="xsd:int"/>
+          <element name="cBez" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="inOutParams_getCurrency">
+    <wsdl:part name="ipFirma" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="inOutParams_getCurrencyResponse">
+    <wsdl:part name="opERROR" type="xsd:boolean"/>
+    <wsdl:part name="opMESSAGE" type="xsd:string"/>
+    <wsdl:part name="ttFrw" type="S2:getCurrency_ttFrwParam"/>
+  </wsdl:message>
+  <wsdl:message name="inOutParams_getLanguage">
+    <wsdl:part name="ipSprcd" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="inOutParams_getLanguageResponse">
+    <wsdl:part name="opERROR" type="xsd:boolean"/>
+    <wsdl:part name="opMESSAGE" type="xsd:string"/>
+    <wsdl:part name="ttSprcd" type="S2:getLanguage_ttSprcdParam"/>
+  </wsdl:message>
+  <wsdl:message name="FaultDetailMessage">
+    <wsdl:part name="FaultDetail" type="S1:FaultDetail"/>
+  </wsdl:message>
+  <wsdl:portType name="inOutParams">
+    <wsdl:operation name="getCurrency" parameterOrder="ipFirma opERROR opMESSAGE ttFrw">
+      <wsdl:input message="tns:inOutParams_getCurrency"/>
+      <wsdl:output message="tns:inOutParams_getCurrencyResponse"/>
+      <wsdl:fault name="inOutParamsFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getLanguage" parameterOrder="ipSprcd opERROR opMESSAGE ttSprcd">
+      <wsdl:input message="tns:inOutParams_getLanguage"/>
+      <wsdl:output message="tns:inOutParams_getLanguageResponse"/>
+      <wsdl:fault name="inOutParamsFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="inOutParams" type="tns:inOutParams">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getCurrency">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
+      </wsdl:output>
+      <wsdl:fault name="inOutParamsFault">
+        <soap:fault name="inOutParamsFault" use="literal" namespace="http://dev-webservices.curaden.ch:8080/AxonIVY/wsaAxonIVY"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getLanguage">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
+      </wsdl:output>
+      <wsdl:fault name="inOutParamsFault">
+        <soap:fault name="inOutParamsFault" use="literal" namespace="http://dev-webservices.curaden.ch:8080/AxonIVY/wsaAxonIVY"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InOutParamsService">
+    <wsdl:port name="inOutParams" binding="tns:inOutParams">
+      <wsdl:documentation/>
+      <soap:address location="http://zugtstweb:7085/inOutParams"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ZUGTSTWEB:7085/mockinOutParams</con:endpoint><con:endpoint>http://zugtstweb:7085/inOutParams</con:endpoint></con:endpoints><con:operation id="598849fc-ad7f-4d5a-84cd-3cb692b59687" isOneWay="false" action="" name="getCurrency" bindingOperationName="getCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="4e8ff73b-e0b9-4408-ab1b-f35d0ad0df72" isOneWay="false" action="" name="getLanguage" bindingOperationName="getLanguage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
    <soap:Header/>
    <soap:Body>
       <web:GetSunSetRiseTimeResponse>
@@ -7370,4 +7470,34 @@
          </ET_MESSAGES>
       </urn:Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse>
    </soap:Body>
-</soap:Envelope>]]></con:responseContent><con:attachment><con:name>test.txt</con:name><con:contentType>text/plain</con:contentType><con:size>52</con:size><con:contentId>test.txt</con:contentId><con:part>1211053004562</con:part><con:url>C:/Tools/test.txt</con:url><con:data>UEsDBBQACAgIANRRikwAAAAAAAAAAAAAAAAIAAAAdGVzdC50eHQLycgsVgCiRIWS1OIShcSSksTkjNzUvBKFtPwiBecIN33fEH9fPV4uzxKF5PzikmIFUz0AUEsHCLuwEtQ0AAAANAAAAFBLAQIUABQACAgIANRRiky7sBLUNAAAADQAAAAIAAAAAAAAAAAAAAAAAAAAAAB0ZXN0LnR4dFBLBQYAAAAAAQABADYAAABqAAAAAAA=</con:data><con:id>8c1cf9ac-14d7-4848-88b1-3d67934b2891</con:id></con:attachment><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/zhr_wsif_axonivfy_mss/Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soap:Envelope>]]></con:responseContent><con:attachment><con:name>test.txt</con:name><con:contentType>text/plain</con:contentType><con:size>52</con:size><con:contentId>test.txt</con:contentId><con:part>1211053004562</con:part><con:data>UEsDBBQACAgIANRRikwAAAAAAAAAAAAAAAAIAAAAdGVzdC50eHQLycgsVgCiRIWS1OIShcSSksTkjNzUvBKFtPwiBecIN33fEH9fPV4uzxKF5PzikmIFUz0AUEsHCLuwEtQ0AAAANAAAAFBLAQIUABQACAgIANRRiky7sBLUNAAAADQAAAAIAAAAAAAAAAAAAAAAAAAAAAB0ZXN0LnR4dFBLBQYAAAAAAQABADYAAABqAAAAAAA=</con:data><con:id>8c1cf9ac-14d7-4848-88b1-3d67934b2891</con:id></con:attachment><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:sap-com:document:sap:rfc:functions/zhr_wsif_axonivfy_mss/Z_HR_WS_GET_TIMESHEET_EMPLOYEEResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="25a7067a-b2dd-4ff9-8b3a-6cb4687c2e65" port="7085" path="/mockinOutParams" host="ZUGTSTWEB" name="MockInOutParamsService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="getCurrency" id="b3cdd7fd-5ee0-4376-8f5d-9515a7b6624b" interface="inOutParams" operation="getCurrency"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="2a77126e-1d25-44ec-b914-7faab91e03c4" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActicleInsert:inOutParams">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getCurrencyResponse>
+         <opERROR>false</opERROR>
+         <opMESSAGE>Mocked Currency Response</opMESSAGE>
+         <ttFrw>
+            <!--Zero or more repetitions:-->
+            <ttFrwRow>
+               <cFrw>Swiss Franc</cFrw>
+               <cBez>CHF</cBez>
+            </ttFrwRow>
+         </ttFrw>
+      </urn:getCurrencyResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getCurrencyResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="getLanguage" id="85b8994a-df50-44db-9eed-e3d5338022f7" interface="inOutParams" operation="getLanguage"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="340bc769-f3fe-4d0d-b288-a41be0fc4ec6" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActicleInsert:inOutParams">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getLanguageResponse>
+         <opERROR>false</opERROR>
+         <opMESSAGE>Mocked Language Response</opMESSAGE>
+         <ttSprcd>
+            <!--Zero or more repetitions:-->
+            <ttSprcdRow>
+               <iSprcd>23</iSprcd>
+               <cBez>German</cBez>
+            </ttSprcdRow>
+         </ttSprcd>
+      </urn:getLanguageResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getLanguageResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
