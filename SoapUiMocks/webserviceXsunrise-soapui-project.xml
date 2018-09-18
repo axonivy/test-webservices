@@ -5657,6 +5657,16 @@
     <wsdl:part name="opMESSAGE" type="xsd:string"/>
     <wsdl:part name="ttSprcd" type="S2:getLanguage_ttSprcdParam"/>
   </wsdl:message>
+  <wsdl:message name="inOutParams_getCountry">
+    <wsdl:part name="iopCountryId" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="inOutParams_getCountryResponse">
+    <wsdl:part name="opERROR" type="xsd:boolean"/>
+    <wsdl:part name="opMESSAGE" type="xsd:string"/>
+    <wsdl:part name="iopCountryId" type="xsd:int"/>
+    <wsdl:part name="opCountryCode" type="xsd:string"/>
+    <wsdl:part name="opCountryName" type="xsd:string"/>
+  </wsdl:message>
   <wsdl:message name="FaultDetailMessage">
     <wsdl:part name="FaultDetail" type="S1:FaultDetail"/>
   </wsdl:message>
@@ -5671,6 +5681,11 @@
       <wsdl:output message="tns:inOutParams_getLanguageResponse"/>
       <wsdl:fault name="inOutParamsFault" message="tns:FaultDetailMessage"/>
     </wsdl:operation>
+    <wsdl:operation name="getCountry" parameterOrder="iopCountryId opERROR opMESSAGE opCountryCode opCountryName">
+      <wsdl:input message="tns:inOutParams_getCountry"/>
+      <wsdl:output message="tns:inOutParams_getCountryResponse"/>
+      <wsdl:fault name="inOutParamsFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="inOutParams" type="tns:inOutParams">
     <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
@@ -5683,7 +5698,7 @@
         <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
       </wsdl:output>
       <wsdl:fault name="inOutParamsFault">
-        <soap:fault name="inOutParamsFault" use="literal" namespace="http://dev-webservices.curaden.ch:8080/AxonIVY/wsaAxonIVY"/>
+        <soap:fault name="inOutParamsFault" use="literal" namespace="http://zugtstweb:7085/inOutParams"/>
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="getLanguage">
@@ -5695,7 +5710,19 @@
         <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
       </wsdl:output>
       <wsdl:fault name="inOutParamsFault">
-        <soap:fault name="inOutParamsFault" use="literal" namespace="http://dev-webservices.curaden.ch:8080/AxonIVY/wsaAxonIVY"/>
+        <soap:fault name="inOutParamsFault" use="literal" namespace="http://zugtstweb:7085/inOutParams"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCountry">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
+      </wsdl:output>
+      <wsdl:fault name="inOutParamsFault">
+        <soap:fault name="inOutParamsFault" use="literal" namespace="http://zugtstweb:7085/inOutParams"/>
       </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
@@ -5705,7 +5732,7 @@
       <soap:address location="http://zugtstweb:7085/inOutParams"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ZUGTSTWEB:7085/mockinOutParams</con:endpoint><con:endpoint>http://zugtstweb:7085/inOutParams</con:endpoint></con:endpoints><con:operation id="598849fc-ad7f-4d5a-84cd-3cb692b59687" isOneWay="false" action="" name="getCurrency" bindingOperationName="getCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="4e8ff73b-e0b9-4408-ab1b-f35d0ad0df72" isOneWay="false" action="" name="getLanguage" bindingOperationName="getLanguage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ZUGTSTWEB:7085/mockinOutParams</con:endpoint><con:endpoint>http://zugtstweb:7085/inOutParams</con:endpoint></con:endpoints><con:operation id="598849fc-ad7f-4d5a-84cd-3cb692b59687" isOneWay="false" action="" name="getCurrency" bindingOperationName="getCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="4e8ff73b-e0b9-4408-ab1b-f35d0ad0df72" isOneWay="false" action="" name="getLanguage" bindingOperationName="getLanguage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="491a5d44-3960-4fab-a826-e4a75be5108d" isOneWay="false" action="" name="getCountry" bindingOperationName="getCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="ZUGTSTWEB" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
    <soap:Header/>
    <soap:Body>
       <web:GetSunSetRiseTimeResponse>
@@ -7500,4 +7527,15 @@
          </ttSprcd>
       </urn:getLanguageResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getLanguageResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getLanguageResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="getCountry" id="2731b756-8898-4273-afc1-8a4ba9de0887" interface="inOutParams" operation="getCountry"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="f82bf967-27ac-4a53-aed8-d1055a0f4ab4" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActicleInsert:inOutParams">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:getCountryResponse>
+         <opERROR>false</opERROR>
+         <opMESSAGE>Mocked Country Response</opMESSAGE>
+         <iopCountryId>11</iopCountryId>
+         <opCountryCode>CH</opCountryCode>
+         <opCountryName>Switzerland</opCountryName>
+      </urn:getCountryResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getCountryResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
