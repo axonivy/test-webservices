@@ -7512,28 +7512,34 @@
          </ttFrw>
       </urn:getCurrencyResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getCurrencyResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="getLanguage" id="85b8994a-df50-44db-9eed-e3d5338022f7" interface="inOutParams" operation="getLanguage"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="340bc769-f3fe-4d0d-b288-a41be0fc4ec6" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActicleInsert:inOutParams">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getCurrencyResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="getLanguage" id="85b8994a-df50-44db-9eed-e3d5338022f7" interface="inOutParams" operation="getLanguage"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="340bc769-f3fe-4d0d-b288-a41be0fc4ec6" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:script>def holder = new com.eviware.soapui.support.XmlHolder( mockRequest.requestContent )
+// get arguments and sum
+def langId = Integer.parseInt( holder["//ipSprcd"] )
+requestContext.langId =  langId</con:script><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActicleInsert:inOutParams">
    <soapenv:Header/>
    <soapenv:Body>
       <urn:getLanguageResponse>
          <opERROR>false</opERROR>
-         <opMESSAGE>Mocked Language Response</opMESSAGE>
+         <opMESSAGE>Mocked Language Response, input ID is ${langId}</opMESSAGE>
          <ttSprcd>
             <!--Zero or more repetitions:-->
             <ttSprcdRow>
-               <iSprcd>23</iSprcd>
+               <iSprcd>${langId}</iSprcd>
                <cBez>German</cBez>
             </ttSprcdRow>
          </ttSprcd>
       </urn:getLanguageResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getLanguageResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="getCountry" id="2731b756-8898-4273-afc1-8a4ba9de0887" interface="inOutParams" operation="getCountry"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="f82bf967-27ac-4a53-aed8-d1055a0f4ab4" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActicleInsert:inOutParams">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getLanguageResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="getCountry" id="2731b756-8898-4273-afc1-8a4ba9de0887" interface="inOutParams" operation="getCountry"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="f82bf967-27ac-4a53-aed8-d1055a0f4ab4" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:script>def holder = new com.eviware.soapui.support.XmlHolder( mockRequest.requestContent )
+// get arguments and sum
+def countryId = Integer.parseInt( holder["//iopCountryId"] )
+requestContext.countryId =  countryId + 2</con:script><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActicleInsert:inOutParams">
    <soapenv:Header/>
    <soapenv:Body>
       <urn:getCountryResponse>
          <opERROR>false</opERROR>
          <opMESSAGE>Mocked Country Response</opMESSAGE>
-         <iopCountryId>11</iopCountryId>
+         <iopCountryId>${countryId}</iopCountryId>
          <opCountryCode>CH</opCountryCode>
          <opCountryName>Switzerland</opCountryName>
       </urn:getCountryResponse>
