@@ -17,18 +17,6 @@
 
   <build>
   	<finalName>country-service</finalName>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-		<artifactId>tomcat7-maven-plugin</artifactId>
-		<version>2.2</version>
-        <configuration>
-          <server>zugtstweb.tomcat</server>
-          <url>http://zugtstweb:8080/manager/text</url>
-          <path>/country-service</path>
-        </configuration>
-      </plugin>
-    </plugins>
   </build>
 
   <dependencies>
