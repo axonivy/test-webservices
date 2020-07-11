@@ -13,7 +13,9 @@ pipeline {
     stage('build') {
       steps {
         script {
-          sh 'docker build -t test-webservice .'
+          docker.withRegistry('https://registry.ivyteam.io', 'registry.ivyteam.io') {
+            docker.build("axonivy/test-webservices:latest").push()
+          }
         }
       }
     }
