@@ -5,7 +5,7 @@
     <groupId>com.axonivy</groupId>
     <artifactId>test-rest-service</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>test-rest-service</name>
 
 	<properties>

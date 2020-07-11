@@ -7,20 +7,16 @@ Internal Test-WebServices
 ## country-service
 
 *   Sample Soap Services based on CXF.
-*	Deployed with Pipeline-Built.
 *	Provides its services also ws-security protected.
 
-## IvyEchoService
+## ivy-echo-service
 
 *	Sample Soap Services based on AXIS2
-*	No idea how this web service is built.
-*	It is manually installed as webapp (axis2) on tomcat. 
 
 ## test-rest-service
 
 * 	Jersey JAX-RS
 * 	Sample Rest Services
-*	Deployed with Pipeline-Built.
 
 ## SOAPUIMocks
 
