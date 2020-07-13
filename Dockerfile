@@ -13,3 +13,4 @@ FROM tomcat:9-jdk8
 COPY --from=builder /tmp/country-service/target/*.war /usr/local/tomcat/webapps
 COPY --from=builder /tmp/test-rest-service/target/*.war /usr/local/tomcat/webapps
 COPY --from=builder /tmp/ivy-echo-service/target/*.war /usr/local/tomcat/webapps
+ADD json-processing-webapp-2.25.war /usr/local/tomcat/webapps

@@ -18,6 +18,10 @@ Internal Test-WebServices
 * 	Jersey JAX-RS
 * 	Sample Rest Services
 
+## json-processing-webapp
+
+* Was built out of here https://github.com/jersey/jersey/tree/master/examples/json-processing-webapp
+
 ## SOAPUIMocks
 
 *   SOAP UI based: runs as service on ZugTstWeb
