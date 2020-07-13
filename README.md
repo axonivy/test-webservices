@@ -7,20 +7,20 @@ Internal Test-WebServices
 ## country-service
 
 *   Sample Soap Services based on CXF.
-*	Deployed with Pipeline-Built.
 *	Provides its services also ws-security protected.
 
-## IvyEchoService
+## ivy-echo-service
 
 *	Sample Soap Services based on AXIS2
-*	No idea how this web service is built.
-*	It is manually installed as webapp (axis2) on tomcat. 
 
 ## test-rest-service
 
 * 	Jersey JAX-RS
 * 	Sample Rest Services
-*	Deployed with Pipeline-Built.
+
+## json-processing-webapp
+
+* Was built out of here https://github.com/jersey/jersey/tree/master/examples/json-processing-webapp
 
 ## SOAPUIMocks
 
@@ -29,16 +29,3 @@ Internal Test-WebServices
 *   Yet no automated deployment possible: It must be manually stored in \\zugtstweb\C:\SoapUiMocks
 *   Soap UI Mock service (windows) must be restarted manually after a new deployment
 * 	See more README in the SoapUiMocks folder
-
-## Deployment
-
-For deployment have a look at the Jenkinsfile. If you want to deploy on your local machine, then you have to add the credentials in your local maven settings.
-
-	<servers>
-		<server>
-			<id>zugtstweb.tomcat</id>
-			<username>admin</username>
-			<password>default admin password</password>
-		</server>
-	</servers>
-
