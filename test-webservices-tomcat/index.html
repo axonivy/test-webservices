@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <style>
+        td {
+            vertical-align:top;
+        }
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(61, 146, 201);
+        }
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+        .sidebar {
+            background: rgb(61, 79, 93);
+            color: #fff;
+        }
+        .content {
+            padding: 2em 1em 0;
+        }
+        @media (min-width: 48em) {
+            .content {
+                padding: 2em 3em 0;
+                margin-left: 25%;
+            }
+        
+            .sidebar {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+            }
+        
+        }
+        </style>
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <div>
+                <section>
+
+                    <div>
+                        <h2>Apache Tomcat</h2>
+                        <table class="pure-table">
+                            <tr>
+                                <td>Country Service (SOAP)</td>
+                                <td>
+                                    <a href="/country-service">/country-service</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>AXIS 2 Service (SOAP)</td>
+                                <td>
+                                    <a href="/axis2">/axis2</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>JSON Processing APP (REST)</td>
+                                <td>
+                                    <a href="/json-processing-webapp-2.25/document">/json-processing-webapp-2.25/document</a>
+                                    (see <a href="https://github.com/jersey/jersey/tree/master/examples/json-processing-webapp">Source</a>)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Test Rest Service (REST)</td>
+                                <td>
+                                    <a href="/test-rest-service">/test-rest-service</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

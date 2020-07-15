@@ -11,3 +11,4 @@ COPY --from=builder /tmp/country-service/target/*.war /usr/local/tomcat/webapps
 COPY --from=builder /tmp/test-rest-service/target/*.war /usr/local/tomcat/webapps
 ADD json-processing-webapp-2.25.war /usr/local/tomcat/webapps
 ADD axis2.war /usr/local/tomcat/webapps
+ADD index.html /usr/local/tomcat/webapps/ROOT/index.html
