@@ -1,6 +1,0 @@
-<serviceGroup>
-    <service name="IvyEchoService" targetNamespace="urn:ws.test.ivyteam.ch">
-        <schema schemaNamespace="urn:schema.ws.test.ivyteam.ch"/>
-        <parameter name="ServiceClass" locked="false">ch.ivyteam.test.ws.EchoService</parameter>
-    </service> 
-</serviceGroup>

@@ -4,28 +4,19 @@ Internal Test-WebServices
 
 ## Projects
 
-## country-service
+## test-webservices-mock
 
-*   Sample Soap Services based on CXF.
-*	Provides its services also ws-security protected.
+* SOAP UI based
+* contains public services that we fake for usage in our tests
+* see more in README in the test-webservices-mocks folder
 
-## ivy-echo-service
+## test-webservice-static
 
-*	Sample Soap Services based on AXIS2
+* serving static pages, used to provide wsdl for our soap ui mock services.
 
-## test-rest-service
+## test-webservices-tomcat
 
-* 	Jersey JAX-RS
-* 	Sample Rest Services
+* provides fully functional services based on java and runs in a tomcat container.
 
-## json-processing-webapp
-
-* Was built out of here https://github.com/jersey/jersey/tree/master/examples/json-processing-webapp
-
-## SOAPUIMocks
-
-*   SOAP UI based: runs as service on ZugTstWeb
-*   contains public services that we fake for usage in our tests
-*   Yet no automated deployment possible: It must be manually stored in \\zugtstweb\C:\SoapUiMocks
-*   Soap UI Mock service (windows) must be restarted manually after a new deployment
-* 	See more README in the SoapUiMocks folder
+* we have no sources for axis2.war.
+* sources for json-processing-webapp are available here: https://github.com/jersey/jersey/tree/master/examples/json-processing-webapp
