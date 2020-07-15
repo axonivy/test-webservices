@@ -92,7 +92,7 @@
 				<soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
 			</wsdl:output>
 			<wsdl:fault name="inOutParamsFault">
-				<soap:fault name="inOutParamsFault" use="literal" namespace="http://zugtstweb:7085/inOutParams"/>
+				<soap:fault name="inOutParamsFault" use="literal" namespace="http://test-webservices.ivyteam.io:7085/inOutParams"/>
 			</wsdl:fault>
 		</wsdl:operation>
 		<wsdl:operation name="getLanguage">
@@ -104,7 +104,7 @@
 				<soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
 			</wsdl:output>
 			<wsdl:fault name="inOutParamsFault">
-				<soap:fault name="inOutParamsFault" use="literal" namespace="http://zugtstweb:7085/inOutParams"/>
+				<soap:fault name="inOutParamsFault" use="literal" namespace="http://test-webservices.ivyteam.io:7085/inOutParams"/>
 			</wsdl:fault>
 		</wsdl:operation>
 		<wsdl:operation name="getCountry">
@@ -116,14 +116,14 @@
 				<soap:body use="literal" namespace="urn:ActicleInsert:inOutParams"/>
 			</wsdl:output>
 			<wsdl:fault name="inOutParamsFault">
-				<soap:fault name="inOutParamsFault" use="literal" namespace="http://zugtstweb:7085/inOutParams"/>
+				<soap:fault name="inOutParamsFault" use="literal" namespace="http://test-webservices.ivyteam.io:7085/inOutParams"/>
 			</wsdl:fault>
 		</wsdl:operation>
 	</wsdl:binding>
 	<wsdl:service name="InOutParamsService">
 		<wsdl:port name="inOutParams" binding="tns:inOutParams">
 			<wsdl:documentation/>
-			<soap:address location="http://zugtstweb:7085/inOutParams"/>
+			<soap:address location="http://test-webservices.ivyteam.io:7085/inOutParams"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>

@@ -2,7 +2,7 @@
 
 ## Add new WSDL to the SoapUI project
 1. Copy the original wsdl to a sub-folder of the `wsdl` subfolder.
-1. Copy the whole `wsdl` subfolder into `C:\inetpub\wwwroot\test-wsdls\` so that the WSDLs become available under the URL `http://zugtstweb/test-wsdls/wsdl/[yourmockservice].wsdl`.
+1. Copy the whole `wsdl` subfolder into `C:\inetpub\wwwroot\test-wsdls\` so that the WSDLs become available under the URL `http://test-webservices.ivyteam.io/wsdl/[yourmockservice].wsdl`.
 1. Open SoapUI project inside `C:\SoapUiMocks\` folder. NOTE: SoapUI needs to be run as Administrator.
 1. Check the next available port number that is not used yet by existing mock services (7077 and later).
 1. Right-click on the Project and select `Add WSDL`.
