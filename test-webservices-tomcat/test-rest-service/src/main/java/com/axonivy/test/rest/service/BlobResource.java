@@ -7,8 +7,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -44,6 +46,42 @@ public class BlobResource {
         System.out.println("Received file "+f.getName()+" in "+(System.currentTimeMillis()-ts)/1000+"s");
         return "File "+f.getName()+" received\n";
         
+    }
+    
+    @PUT
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    @Produces(MediaType.APPLICATION_JSON)
+    public DocMeta shareFile(
+            @FormDataParam("file") FormDataContentDisposition fileDetail,
+            @FormDataParam("file") InputStream fileUploadStream,
+            @FormDataParam("description") @DefaultValue("#") String description,
+            @FormDataParam("userId") @DefaultValue("-1") Integer userId 
+        ) throws IOException {
+        File f = null;
+        if(fileDetail !=null && fileDetail.getFileName() != null) {
+            System.out.println("Receiving file "+fileDetail.getFileName());
+            f = new File(fileDetail.getFileName());
+            long ts = System.currentTimeMillis();
+            try(InputStream is = fileUploadStream)
+            {
+            }
+            System.out.println("Received file "+f.getName()+" in "+(System.currentTimeMillis()-ts)/1000+"s");
+        }
+        return new DocMeta(f, description, userId);
+    }
+    
+    public static class DocMeta
+    {
+      public final String fileName;
+      public final String description;
+      public final Integer ownerId;
+      
+      public DocMeta(File file, String description, Integer ownerId)
+      {
+        this.fileName = file == null ? null : file.getName();
+        this.description = description;
+        this.ownerId = ownerId;
+      }
     }
 
     @GET
