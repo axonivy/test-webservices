@@ -13,13 +13,21 @@ pipeline {
     stage('build') {
       steps {
         script {
-          docker.withRegistry('https://registry.ivyteam.io', 'registry.ivyteam.io') {
-            docker.build("test-webservices-tomcat:latest", "test-webservices-tomcat").push()
-            docker.build("test-webservices-static:latest", "test-webservices-static").push()
-            docker.build("test-webservices-mocks:latest", "test-webservices-mocks").push()
-          }
+          buildImage("test-webservices-tomcat:latest", "test-webservices-tomcat");
+          buildImage("test-webservices-static:latest", "test-webservices-static");
+          buildImage("test-webservices-mocks:latest", "test-webservices-mocks");          
         }
       }
     }
+  }
+}
+
+def buildImage(def name, def contextDir) {
+  def image;
+  docker.withRegistry('', 'docker.io') {
+    image = docker.build(name, contextDir);
+  }
+  docker.withRegistry('https://registry.ivyteam.io', 'registry.ivyteam.io') {
+    image.push()    
   }
 }
