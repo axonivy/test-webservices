@@ -24,7 +24,7 @@ pipeline {
 
 def buildImage(def name, def contextDir) {
   def image = docker.build(name, contextDir);  
-  docker.withRegistry('https://registry.ivyteam.io', 'registry.ivyteam.io') {
+  docker.withRegistry('https://docker-registry.ivyteam.io', 'docker-registry.ivyteam.io') {
     image.push()    
   }
 }
