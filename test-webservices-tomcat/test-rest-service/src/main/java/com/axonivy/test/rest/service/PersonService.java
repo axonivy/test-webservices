@@ -42,7 +42,7 @@ public class PersonService {
 	}
 	
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Response getPersons(@QueryParam("name") String name)
 	{
 		if (StringUtils.isBlank(name))
