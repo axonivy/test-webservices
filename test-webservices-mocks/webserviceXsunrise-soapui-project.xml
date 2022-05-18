@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="5386454e-0da6-43d5-9d7d-d96bfb5ef92d" activeEnvironment="Default" name="TestWebservices" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="37460c80-ee60-4c0c-a06f-455ca38d82b6" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://test-webservices.ivyteam.io/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://test-webservices.ivyteam.io/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl"><con:part><con:url>http://test-webservices.ivyteam.io/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webserviceX.NET/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<con:soapui-project id="5386454e-0da6-43d5-9d7d-d96bfb5ef92d" activeEnvironment="Default" name="TestWebservices" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="37460c80-ee60-4c0c-a06f-455ca38d82b6" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://test-webservices.ivyteam.io/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://test-webservices.ivyteam.io/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl"><con:part><con:url>http://test-webservices.ivyteam.io/wsdl/sunsetServiceWsdl/sunsetriseservice.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webserviceX.NET/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET/">
       <s:element name="GetSunSetRiseTime">
@@ -5732,7 +5732,291 @@
       <soap:address location="http://test-webservices.ivyteam.io:7085/inOutParams"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://test-webservices.ivyteam.io:7085/mockinOutParams</con:endpoint><con:endpoint>http://test-webservices.ivyteam.io:7085/inOutParams</con:endpoint></con:endpoints><con:operation id="598849fc-ad7f-4d5a-84cd-3cb692b59687" isOneWay="false" action="" name="getCurrency" bindingOperationName="getCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="4e8ff73b-e0b9-4408-ab1b-f35d0ad0df72" isOneWay="false" action="" name="getLanguage" bindingOperationName="getLanguage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="491a5d44-3960-4fab-a826-e4a75be5108d" isOneWay="false" action="" name="getCountry" bindingOperationName="getCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="test-webservices.ivyteam.io" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://test-webservices.ivyteam.io:7085/inOutParams</con:endpoint><con:endpoint>http://test-webservices.ivyteam.io:7085/mockinOutParams</con:endpoint></con:endpoints><con:operation id="598849fc-ad7f-4d5a-84cd-3cb692b59687" isOneWay="false" action="" name="getCurrency" bindingOperationName="getCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="4e8ff73b-e0b9-4408-ab1b-f35d0ad0df72" isOneWay="false" action="" name="getLanguage" bindingOperationName="getLanguage" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="491a5d44-3960-4fab-a826-e4a75be5108d" isOneWay="false" action="" name="getCountry" bindingOperationName="getCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="3df25551-5bf6-47f0-b7f7-a151d969af18" wsaVersion="NONE" name="SampleWebServiceSoap" type="wsdl" bindingName="{http://smartbear.com}SampleWebServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx</con:endpoint><con:endpoint>http://zuglinrew:8088/mockSampleWebServiceSoap</con:endpoint></con:endpoints><con:operation id="fa9fe7b5-b584-40f6-910a-80d060f25de5" isOneWay="false" action="http://smartbear.com/GetArray" name="GetArray" bindingOperationName="GetArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="39dd5f62-b6e6-451c-90d0-8be19471e714" isOneWay="false" action="http://smartbear.com/GetCurrentTime" name="GetCurrentTime" bindingOperationName="GetCurrentTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="92ccfde7-9f10-42a2-9abb-ca7652320096" isOneWay="false" action="http://smartbear.com/GetSampleObject" name="GetSampleObject" bindingOperationName="GetSampleObject" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="530f681e-eec1-4ed2-965e-2eeb2a0b8622" isOneWay="false" action="http://smartbear.com/GetXmlData" name="GetXmlData" bindingOperationName="GetXmlData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="53ca82b6-103d-4820-8032-0460ba6ad243" isOneWay="false" action="http://smartbear.com/HelloWorld" name="HelloWorld" bindingOperationName="HelloWorld" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="d96fa883-2b19-4863-9a0e-0c33b5db319f" isOneWay="false" action="http://smartbear.com/SetSampleObject" name="SetSampleObject" bindingOperationName="SetSampleObject" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="8ea3c977-f6cf-457e-a804-f8defb4f89f4" wsaVersion="NONE" name="SampleWebServiceSoap12" type="wsdl" bindingName="{http://smartbear.com}SampleWebServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx?WSDL"><con:part><con:url>http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://smartbear.com" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://smartbear.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>This sample web service is used to demonstrate how to test web services with SmartBear's TestComplete.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://smartbear.com">
+      <s:element name="HelloWorld">
+        <s:complexType/>
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArray">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetArrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArrayResult" type="tns:ArrayOfInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCurrentTime">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetCurrentTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCurrentTimeResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSampleObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="no" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSampleObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSampleObjectResult" type="tns:SampleTestClass"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SampleTestClass">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="X" type="s:double"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Y" type="s:double"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="IntArray" type="tns:ArrayOfInt"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetSampleObject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:SampleTestClass"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSampleObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetSampleObjectResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetXmlData">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetXmlDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetXmlDataResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld"/>
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetArraySoapIn">
+    <wsdl:part name="parameters" element="tns:GetArray"/>
+  </wsdl:message>
+  <wsdl:message name="GetArraySoapOut">
+    <wsdl:part name="parameters" element="tns:GetArrayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentTimeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSampleObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSampleObject"/>
+  </wsdl:message>
+  <wsdl:message name="GetSampleObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSampleObjectResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SetSampleObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSampleObject"/>
+  </wsdl:message>
+  <wsdl:message name="SetSampleObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSampleObjectResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetXmlDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetXmlData"/>
+  </wsdl:message>
+  <wsdl:message name="GetXmlDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetXmlDataResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="SampleWebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:documentation>This method returns a string value.</wsdl:documentation>
+      <wsdl:input message="tns:HelloWorldSoapIn"/>
+      <wsdl:output message="tns:HelloWorldSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <wsdl:documentation>This method returns an array of integer values.</wsdl:documentation>
+      <wsdl:input message="tns:GetArraySoapIn"/>
+      <wsdl:output message="tns:GetArraySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTime">
+      <wsdl:documentation>This method returns the current system time.</wsdl:documentation>
+      <wsdl:input message="tns:GetCurrentTimeSoapIn"/>
+      <wsdl:output message="tns:GetCurrentTimeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSampleObject">
+      <wsdl:documentation>This method returns an object.</wsdl:documentation>
+      <wsdl:input message="tns:GetSampleObjectSoapIn"/>
+      <wsdl:output message="tns:GetSampleObjectSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetSampleObject">
+      <wsdl:documentation>This method uses an object as a parameter.</wsdl:documentation>
+      <wsdl:input message="tns:SetSampleObjectSoapIn"/>
+      <wsdl:output message="tns:SetSampleObjectSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlData">
+      <wsdl:documentation>This method returns an object that is an XML node.</wsdl:documentation>
+      <wsdl:input message="tns:GetXmlDataSoapIn"/>
+      <wsdl:output message="tns:GetXmlDataSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SampleWebServiceSoap" type="tns:SampleWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://smartbear.com/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <soap:operation soapAction="http://smartbear.com/GetArray" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTime">
+      <soap:operation soapAction="http://smartbear.com/GetCurrentTime" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSampleObject">
+      <soap:operation soapAction="http://smartbear.com/GetSampleObject" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSampleObject">
+      <soap:operation soapAction="http://smartbear.com/SetSampleObject" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlData">
+      <soap:operation soapAction="http://smartbear.com/GetXmlData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SampleWebServiceSoap12" type="tns:SampleWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://smartbear.com/HelloWorld" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <soap12:operation soapAction="http://smartbear.com/GetArray" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTime">
+      <soap12:operation soapAction="http://smartbear.com/GetCurrentTime" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSampleObject">
+      <soap12:operation soapAction="http://smartbear.com/GetSampleObject" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSampleObject">
+      <soap12:operation soapAction="http://smartbear.com/SetSampleObject" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlData">
+      <soap12:operation soapAction="http://smartbear.com/GetXmlData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SampleWebService">
+    <wsdl:documentation>This sample web service is used to demonstrate how to test web services with SmartBear's TestComplete.</wsdl:documentation>
+    <wsdl:port name="SampleWebServiceSoap" binding="tns:SampleWebServiceSoap">
+      <soap:address location="http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="SampleWebServiceSoap12" binding="tns:SampleWebServiceSoap12">
+      <soap12:address location="http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://secure.smartbearsoftware.com/samples/testcomplete12/webservices/Service.asmx</con:endpoint><con:endpoint>http://zuglinrew:8088/mockSampleWebServiceSoap12</con:endpoint></con:endpoints><con:operation id="df3246ba-1b2f-4606-b411-3c8d05511b52" isOneWay="false" action="http://smartbear.com/GetArray" name="GetArray" bindingOperationName="GetArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="f90ec11e-97e8-4e90-afb9-1999bf501788" isOneWay="false" action="http://smartbear.com/GetCurrentTime" name="GetCurrentTime" bindingOperationName="GetCurrentTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="10b65772-aa41-4489-8d8d-ac48d260963f" isOneWay="false" action="http://smartbear.com/GetSampleObject" name="GetSampleObject" bindingOperationName="GetSampleObject" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="04e25072-ba1e-431a-9152-3c72e96f3042" isOneWay="false" action="http://smartbear.com/GetXmlData" name="GetXmlData" bindingOperationName="GetXmlData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="6b448292-98e9-4e19-85d7-0ef3eb609c0e" isOneWay="false" action="http://smartbear.com/HelloWorld" name="HelloWorld" bindingOperationName="HelloWorld" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="d2543eac-a25b-4e9d-8d08-510f4744f3a7" isOneWay="false" action="http://smartbear.com/SetSampleObject" name="SetSampleObject" bindingOperationName="SetSampleObject" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:mockService id="03fbd104-3d11-45f1-b1ba-d136eb888402" port="7077" path="/mockedPublicServices" host="test-webservices.ivyteam.io" name="CommonMockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetSunSetRiseTime" id="688ea226-293e-413a-ab41-2157cb365392" interface="SunSetRiseServiceSoap12" operation="GetSunSetRiseTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="7f72a1e3-5dcc-4889-b444-da05e0bdfe94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">
    <soap:Header/>
    <soap:Body>
       <web:GetSunSetRiseTimeResponse>
@@ -7544,4 +7828,132 @@ requestContext.countryId =  countryId + 2</con:script><con:responseContent><![CD
          <opCountryName>Switzerland</opCountryName>
       </urn:getCountryResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getCountryResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ActicleInsert/inOutParams/getCountryResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="44c587af-c12f-4f8f-91f2-0cff018915e9" port="8088" path="/mockSampleWebServiceSoap" host="zuglinrew" name="SmartbearSampleWebServiceSoap"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetArray" id="cbde0a8c-8e74-46cd-a321-1a6f7a97d715" interface="SampleWebServiceSoap" operation="GetArray"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="f0f464cb-c1ac-4251-a0f2-6d5a35342dc1" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smar="http://smartbear.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <smar:GetArrayResponse>
+         <!--Optional:-->
+         <smar:GetArrayResult>
+            <!--Zero or more repetitions:-->
+            <smar:int>?</smar:int>
+         </smar:GetArrayResult>
+      </smar:GetArrayResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/GetArray"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetCurrentTime" id="dacff6e4-83b4-439e-9b23-10b78c08dcae" interface="SampleWebServiceSoap" operation="GetCurrentTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>RANDOM</con:dispatchStyle><con:response name="Response 1" id="b8f6dcd9-d224-4e87-bbeb-6d6d9faa1fc9" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smar="http://smartbear.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <smar:GetCurrentTimeResponse>
+         <smar:GetCurrentTimeResult>?</smar:GetCurrentTimeResult>
+      </smar:GetCurrentTimeResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/GetCurrentTime"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetSampleObject" id="4b3d134d-b61a-4137-97b8-e17c00126bce" interface="SampleWebServiceSoap" operation="GetSampleObject"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="c756aac9-23af-4cc4-9d74-09393f839b94" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smar="http://smartbear.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <smar:GetSampleObjectResponse>
+         <!--Optional:-->
+         <smar:GetSampleObjectResult>
+            <smar:X>?</smar:X>
+            <smar:Y>?</smar:Y>
+            <!--Optional:-->
+            <smar:Name>?</smar:Name>
+            <!--Optional:-->
+            <smar:IntArray>
+               <!--Zero or more repetitions:-->
+               <smar:int>?</smar:int>
+            </smar:IntArray>
+         </smar:GetSampleObjectResult>
+      </smar:GetSampleObjectResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/GetSampleObject"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetXmlData" id="f1cc3df5-f7dc-4d36-ba21-8c477635712e" interface="SampleWebServiceSoap" operation="GetXmlData"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="1ffd699f-d36f-481f-be2a-d26e89a3a40d" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smar="http://smartbear.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <smar:GetXmlDataResponse>
+         <!--Optional:-->
+         <smar:GetXmlDataResult>
+            e
+            <!--You may enter ANY elements at this point-->
+            gero
+         </smar:GetXmlDataResult>
+      </smar:GetXmlDataResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/GetXmlData"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="HelloWorld" id="1f3572ad-b0e2-492f-a2e4-98c288b1b8d6" interface="SampleWebServiceSoap" operation="HelloWorld"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="f4aafd24-c221-4065-a9a4-c5a4f2f97536" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smar="http://smartbear.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <smar:HelloWorldResponse>
+         <!--Optional:-->
+         <smar:HelloWorldResult>?</smar:HelloWorldResult>
+      </smar:HelloWorldResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/HelloWorld"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="SetSampleObject" id="d70042bd-6e8c-4749-920c-718862996fa8" interface="SampleWebServiceSoap" operation="SetSampleObject"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="8ec27902-a7e8-4b2f-9d49-1bac5483eb4c" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smar="http://smartbear.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <smar:SetSampleObjectResponse>
+         <!--Optional:-->
+         <smar:SetSampleObjectResult>?</smar:SetSampleObjectResult>
+      </smar:SetSampleObjectResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/SetSampleObject"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:mockService id="297d45fe-bd1d-40bc-835e-d666a6ae00d5" port="8088" path="/mockSampleWebServiceSoap12" host="zuglinrew" name="SmartbearSampleWebServiceSoap12"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetArray" id="e60f5c29-3fa1-46cf-aed6-050b39bebde4" interface="SampleWebServiceSoap12" operation="GetArray"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="0ca98df1-4721-481d-a2df-fc69453ab85b" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:smar="http://smartbear.com">
+   <soap:Header/>
+   <soap:Body>
+      <smar:GetArrayResponse>
+         <!--Optional:-->
+         <smar:GetArrayResult>
+            <!--Zero or more repetitions:-->
+            <smar:int>?</smar:int>
+         </smar:GetArrayResult>
+      </smar:GetArrayResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/SampleWebServiceSoap/GetArrayResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetCurrentTime" id="ee3bbd60-624a-4072-be3d-b3e146670abe" interface="SampleWebServiceSoap12" operation="GetCurrentTime"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="3aa43e10-3fb4-48b0-bff8-ffc6c496e40a" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:script>context.time=new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date())</con:script><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:smar="http://smartbear.com">
+   <soap:Header/>
+   <soap:Body>
+      <smar:GetCurrentTimeResponse>
+         <smar:GetCurrentTimeResult>${time}</smar:GetCurrentTimeResult>
+      </smar:GetCurrentTimeResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/SampleWebServiceSoap/GetCurrentTimeResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetSampleObject" id="1b62f7d1-d78c-4239-9271-6360c36159a9" interface="SampleWebServiceSoap12" operation="GetSampleObject"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="9bad600c-4bc9-4fe7-b624-ab09bdf1bcf6" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:smar="http://smartbear.com">
+   <soap:Header/>
+   <soap:Body>
+      <smar:GetSampleObjectResponse>
+         <!--Optional:-->
+         <smar:GetSampleObjectResult>
+            <smar:X>?</smar:X>
+            <smar:Y>?</smar:Y>
+            <!--Optional:-->
+            <smar:Name>?</smar:Name>
+            <!--Optional:-->
+            <smar:IntArray>
+               <!--Zero or more repetitions:-->
+               <smar:int>?</smar:int>
+            </smar:IntArray>
+         </smar:GetSampleObjectResult>
+      </smar:GetSampleObjectResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/SampleWebServiceSoap/GetSampleObjectResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetXmlData" id="10989a92-3523-4b21-ba47-09d72fd45a9e" interface="SampleWebServiceSoap12" operation="GetXmlData"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="8ac85c8d-4a6a-437c-94f7-bde01e6f4203" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:smar="http://smartbear.com">
+   <soap:Header/>
+   <soap:Body>
+      <smar:GetXmlDataResponse>
+         <!--Optional:-->
+         <smar:GetXmlDataResult>
+            e
+            <!--You may enter ANY elements at this point-->
+            gero
+         </smar:GetXmlDataResult>
+      </smar:GetXmlDataResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/SampleWebServiceSoap/GetXmlDataResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="HelloWorld" id="f6d75825-01e8-47ac-9f51-498d1280549e" interface="SampleWebServiceSoap12" operation="HelloWorld"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="a9493860-801b-4c1d-bef4-17228730cec5" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:smar="http://smartbear.com">
+   <soap:Header/>
+   <soap:Body>
+      <smar:HelloWorldResponse>
+         <!--Optional:-->
+         <smar:HelloWorldResult>?</smar:HelloWorldResult>
+      </smar:HelloWorldResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/SampleWebServiceSoap/HelloWorldResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="SetSampleObject" id="ad98a84d-d9de-4e8d-8f31-458e9ca17b0c" interface="SampleWebServiceSoap12" operation="SetSampleObject"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="8765f2d2-6ff6-4a1b-96f9-b1d73ca04d2b" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:smar="http://smartbear.com">
+   <soap:Header/>
+   <soap:Body>
+      <smar:SetSampleObjectResponse>
+         <!--Optional:-->
+         <smar:SetSampleObjectResult>?</smar:SetSampleObjectResult>
+      </smar:SetSampleObjectResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://smartbear.com/SampleWebServiceSoap/SetSampleObjectResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
